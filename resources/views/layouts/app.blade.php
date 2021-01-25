@@ -24,7 +24,7 @@
 	<nav>
 		<a href="/">Home</a>
 		@auth
-		<a href="{{ route('dashboard.index') }}">Dashboard</a>
+		<a href="{{ route('pendaftaran.index') }}">Pendaftaran</a>
 		<form method="POST" action="{{ route('logout') }}">
 			@csrf
 			<input type="submit" value="logout"/>
