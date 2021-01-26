@@ -36,6 +36,7 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">🏀 Olahraga</p>
+						<a href="#" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>
@@ -43,6 +44,7 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">💃 Seni Budaya</p>
+						<a href="#" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>
@@ -50,6 +52,7 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">🔬 Keilmiahan</p>
+						<a href="{{ route('landing.keilmiahan.index') }}" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>
@@ -57,6 +60,7 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">💖 Apresiasi</p>
+						<a href="#" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>

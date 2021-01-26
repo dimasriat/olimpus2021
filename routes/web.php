@@ -9,9 +9,13 @@ use App\Http\Controllers\DashboardEsaiController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-	$api = json_decode(file_get_contents("../resources/api/api.json"), true);
+	$api = json_decode(file_get_contents(__DIR__."/../resources/api/api.json"), true);
 	return view('landing.index', ['api' => $api]);
-});
+})->name('landing.index');
+Route::get('/keilmiahan', function () {
+	$api = json_decode(file_get_contents(__DIR__."/../resources/api/api.json"), true);
+	return view('landing.keilmiahan.index', ['api' => $api]);
+})->name('landing.keilmiahan.index');
 
 Route::get('/dashboard', [UserController::class, 'index'])
 	->middleware(['auth'])->name('dashboard.index');
