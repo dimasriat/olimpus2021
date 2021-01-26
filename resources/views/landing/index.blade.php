@@ -36,7 +36,7 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">🏀 Olahraga</p>
-						<a href="#" class="btn btn-primary mt-3 w-100">Lihat</a>
+						<a href="{{ route('landing.olahraga.index') }}" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>
@@ -44,7 +44,7 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">💃 Seni Budaya</p>
-						<a href="#" class="btn btn-primary mt-3 w-100">Lihat</a>
+						<a href="{{ route('landing.seni_budaya.index') }}" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>
@@ -60,14 +60,14 @@
 				<div class="card shadow h-100">
 					<div class="card-body">
 						<p class="text-center font-weight-bold h3">💖 Apresiasi</p>
-						<a href="#" class="btn btn-primary mt-3 w-100">Lihat</a>
+						<a href="{{ route('landing.apresiasi.index') }}" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</x-container>
 	<x-container class="py-5 bgcomingsoon" style="color: white;">
-		<div class="h1 text-center font-weight-bold">🎉 COMING SOON IN 2021! 🎉</div>
+		<div class="h1 text-center font-weight-bold">🎉 WAIT AND SEE IN 2021! 🎉</div>
 	</x-container>
 	<x-container class="py-5 text-light" style="background-image: url('{{ asset('img/bg-2.jpg') }}'); background-size: cover; background-attachment: fixed; background-position: center;" >
 		<div class="h1 text-center font-weight-bold py-5">📹 Video Teaser 📹</div>

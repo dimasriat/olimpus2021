@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
 	<link rel="shortcut icon" href="{{ asset('img/logo-big.png') }}" type="image/png">
-	<!-- <script src="{{ asset('js/play.js') }}"></script> -->
+	<script src="{{ asset('js/play.js') }}"></script>
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
@@ -21,10 +21,16 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a href="{{ $api['contact']['instagram'] }}" class="nav-link">Instagram</a>
+					<a href="{{ route('landing.olahraga.index') }}" class="nav-link">Olahraga</a>
 				</li>
 				<li class="nav-item">
-					<a href="{{ $api['contact']['youtube'] }}" class="nav-link">Youtube</a>
+					<a href="{{ route('landing.seni_budaya.index') }}" class="nav-link">Seni Budaya</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('landing.keilmiahan.index') }}" class="nav-link">Keilmiahan</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ route('landing.apresiasi.index') }}" class="nav-link">Apresiasi</a>
 				</li>
 			</ul>
 		</div>
