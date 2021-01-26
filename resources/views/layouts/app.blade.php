@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<h1>TECHNOPRENEUR</h1>
+	<h1>LARAVEL</h1>
 	<nav>
 		<a href="/">Home</a>
 		@auth
