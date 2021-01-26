@@ -8,7 +8,7 @@
 			<img src="{{ asset($pamflet) }}" class="img-fluid w-100 shadow"/>
 		</div>
 		<div class="col col-lg my-3">
-			<a href="{{ asset($pamflet) }}" class="btn btn-primary w-100">Download Pamflet</a>
+			<a href="{{ asset($pamflet) }}" class="btn btn-primary w-100"  download>Download Pamflet</a>
 		</div>
 		<div class="col col-lg my-3">
 			<a href="{{ $guidebook }}" class="btn btn-danger w-100">Download Guide Book</a>
