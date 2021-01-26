@@ -5,16 +5,16 @@
 	<div class="h1 text-center font-weight-bold py-5">LKTI</div>
 	<div class="row">
 		<div class="col-12 my-3">
-			<img src="{{ asset('img/keilmiahan/lkti/pamflet.jpeg') }}" class="img-fluid w-100 shadow"/>
+			<img src="{{ asset($pamflet) }}" class="img-fluid w-100 shadow"/>
 		</div>
 		<div class="col col-lg my-3">
-			<a href="#" class="btn btn-primary w-100">Download Pamflet</a>
+			<a href="{{ asset($pamflet) }}" class="btn btn-primary w-100">Download Pamflet</a>
 		</div>
 		<div class="col col-lg my-3">
-			<a href="#" class="btn btn-danger w-100">Download Guide Book</a>
+			<a href="{{ $guidebook }}" class="btn btn-danger w-100">Download Guide Book</a>
 		</div>
 		<div class="col-12 col-lg my-3">
-			<a href="#" class="btn btn-success w-100">Hubungi Contact Person LKTI (Whatsapp)</a>
+			<a href="{{ $whatsapp }}" class="btn btn-success w-100">Hubungi Contact Person LKTI (Whatsapp)</a>
 		</div>
 	</div>
 </x-container>
@@ -39,23 +39,23 @@
 					<form method="POST" action="{{ route('landing.keilmiahan.lkti.store') }}">
 						@csrf
 						<div class="form-group">
-							<label for="email">Email:</label><br/>
+							<label for="email">Email (required):</label><br/>
 							<input id="email" type="text" name="email"  value="{{ old('email') }}" class="form-control"/>
 						</div>
 						<div class="form-group">
-							<label for="fakultas">Fakultas:</label><br/>
+							<label for="fakultas">Fakultas (required):</label><br/>
 							<input id="fakultas" type="text" name="fakultas" value="{{ old('fakultas') }}" class="form-control"/>
 						</div>
 						<div class="form-group">
-							<label for="no_wa_ketua">No Whatsapp Ketua TIM:</label><br/>
+							<label for="no_wa_ketua">No Whatsapp Ketua TIM (required):</label><br/>
 							<input id="no_wa_ketua" type="text" name="no_wa_ketua" value="{{ old('no_wa_ketua') }}" class="form-control"/>
 						</div>
 						<div class="form-group">
-							<label for="nama_ketua">Nama Lengkap Ketua TIM:</label><br/>
+							<label for="nama_ketua">Nama Lengkap Ketua TIM (required):</label><br/>
 							<input id="nama_ketua" type="text" name="nama_ketua" value="{{ old('nama_ketua') }}" class="form-control"/>
 						</div>	
 						<div class="form-group">
-							<label for="nim_jurusan_ketua">NIM / Jurusan Ketua TIM:</label><br/>
+							<label for="nim_jurusan_ketua">NIM / Jurusan Ketua TIM (required):</label><br/>
 							<input id="nim_jurusan_ketua" type="text" name="nim_jurusan_ketua" value="{{ old('nim_jurusan_ketua') }}" class="form-control"/>
 						</div>
 						<div class="form-group">
@@ -75,7 +75,7 @@
 							<input id="nim_jurusan_anggota_2" type="text" name="nim_jurusan_anggota_2" value="{{ old('nim_jurusan_anggota_2') }}" class="form-control"/>
 						</div>
 						<div class="form-group">
-							<label for="nama_pembimbing">Nama Pembimbing + Gelar:</label><br/>
+							<label for="nama_pembimbing">Nama Pembimbing + Gelar (required):</label><br/>
 							<input id="nama_pembimbing" type="text" name="nama_pembimbing" value="{{ old('nama_pembimbing') }}" class="form-control"/>
 						</div>
 						<input type="submit" name="submit" value="submit" class="btn btn-primary"/>

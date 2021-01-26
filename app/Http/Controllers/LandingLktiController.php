@@ -7,9 +7,21 @@ use Illuminate\Support\Facades\DB;
 
 class LandingLktiController extends Controller
 {
+	public $cabang_lomba = 'LKTI';
+	public $whatsapp = 'https://api.whatsapp.com/send?phone=6281578382326';
+	public $pamflet = 'img/keilmiahan/lkti/pamflet.jpeg';
+	public $guidebook = 'http://scholar.google.com';
+	public $nominal = 'Rp35.000,00';
+
 	public function index() {
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
-		return view('landing.keilmiahan.lkti', ['api' => $api]);
+		return view('landing.keilmiahan.lkti', [
+			'api' => $api,
+			'whatsapp' => $this->whatsapp,
+			'cabang_lomba' => $this->cabang_lomba,
+			'pamflet' => $this->pamflet,
+			'guidebook' => $this->guidebook,
+		]);
 	}
 
 	public function store(Request $request) {
@@ -40,7 +52,12 @@ class LandingLktiController extends Controller
 	public function success() {
 		if (session('status')) {
 			$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
-			return view('landing.success', ['api' => $api]);
+			return view('landing.success', [
+				'api' => $api,
+				'whatsapp' => $this->whatsapp,
+				'cabang_lomba' => $this->cabang_lomba,
+				'nominal' =>$this->nominal,
+			]);
 		} else {
 			return redirect()->route('landing.keilmiahan.lkti.index');
 		}
