@@ -5,6 +5,9 @@ use App\Http\Controllers\LandingLktiController;
 use App\Http\Controllers\DashboardLktiController;
 use App\Http\Controllers\LandingEsaiController;
 use App\Http\Controllers\DashboardEsaiController;
+use App\Http\Controllers\LandingDebatController;
+use App\Http\Controllers\LandingPosterController;
+use App\Http\Controllers\LandingSpeechController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -46,7 +49,9 @@ Route::get('/dashboard/pendaftaran', function(){
 	return view('dashboard.pendaftaran.index');
 })->middleware(['auth'])->name('pendaftaran.index');
 
-
+/**
+ * KEILMIAHAN / LKTI
+ */
 Route::get('/keilmiahan/lkti', [LandingLktiController::class, 'index'])
 	->name('landing.keilmiahan.lkti.index');
 Route::post('/keilmiahan/lkti', [LandingLktiController::class, 'store'])
@@ -57,17 +62,46 @@ Route::get('/dashboard/pendaftaran/lkti', [DashboardLktiController::class, 'inde
 	->middleware(['auth'])->name('pendaftaran.lkti.index');
 Route::put('/dashboard/pendaftaran/lkti', [DashboardLktiController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.lkti.update');
+	
+/**
+ * KEILMIAHAN / ESAI
+ */
+Route::get('/keilmiahan/esai', [LandingEsaiController::class, 'index'])
+	->name('landing.keilmiahan.esai.index');
+Route::post('/keilmiahan/esai', [LandingEsaiController::class, 'store'])
+	->name('landing.keilmiahan.esai.store');
+Route::get('/keilmiahan/esai/success', [LandingEsaiController::class, 'success'])
+	->name('landing.keilmiahan.esai.success');
 
-// Route::get('/keilmiahan/esai', [LandingEsaiController::class, 'index'])
-// 	->name('landing.keilmiahan.esai.index');
-// Route::post('/keilmiahan/esai', [LandingEsaiController::class, 'store'])
-// 	->name('landing.keilmiahan.esai.store');
-// Route::get('/keilmiahan/esai/success', [LandingEsaiController::class, 'success'])
-// 	->name('landing.keilmiahan.esai.success');
-// Route::get('/dashboard/pendaftaran/esai', [LandingEsaiController::class, 'index'])
-// 	->middleware(['auth'])->name('pendaftaran.esai.index');
-// Route::put('/dashboard/pendaftaran/esai', [LandingEsaiController::class, 'update'])
-// 	->middleware(['auth'])->name('pendaftaran.esai.update');
+/**
+ * KEILMIAHAN / DEBAT
+ */
+Route::get('/keilmiahan/debat', [LandingDebatController::class, 'index'])
+	->name('landing.keilmiahan.debat.index');
+Route::post('/keilmiahan/debat', [LandingDebatController::class, 'store'])
+	->name('landing.keilmiahan.debat.store');
+Route::get('/keilmiahan/debat/success', [LandingDebatController::class, 'success'])
+	->name('landing.keilmiahan.debat.success');
+	
+/**
+ * KEILMIAHAN / POSTER
+ */
+Route::get('/keilmiahan/poster', [LandingPosterController::class, 'index'])
+->name('landing.keilmiahan.poster.index');
+Route::post('/keilmiahan/poster', [LandingPosterController::class, 'store'])
+->name('landing.keilmiahan.poster.store');
+Route::get('/keilmiahan/poster/success', [LandingPosterController::class, 'success'])
+->name('landing.keilmiahan.poster.success');
+
+/**
+ * KEILMIAHAN / SPEECH
+ */
+Route::get('/keilmiahan/speech', [LandingSpeechController::class, 'index'])
+->name('landing.keilmiahan.speech.index');
+Route::post('/keilmiahan/speech', [LandingSpeechController::class, 'store'])
+->name('landing.keilmiahan.speech.store');
+Route::get('/keilmiahan/speech/success', [LandingSpeechController::class, 'success'])
+->name('landing.keilmiahan.speech.success');
 
 require __DIR__.'/auth.php';
 

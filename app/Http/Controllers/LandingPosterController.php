@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class LandingEsaiController extends Controller
+class LandingPosterController extends Controller
 {
-    public $cabang_lomba = 'Esai';
+	public $cabang_lomba = 'LKTI';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6281578382326';
 	public $pamflet = 'img/keilmiahan/lkti/pamflet.jpeg';
 	public $guidebook = 'http://bit.ly/GuidebookLKTIOlimpus2021';

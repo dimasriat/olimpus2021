@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class LandingEsaiController extends Controller
+class LandingDebatController extends Controller
 {
     public $cabang_lomba = 'Esai';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6281578382326';
