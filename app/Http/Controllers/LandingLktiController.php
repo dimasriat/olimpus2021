@@ -12,16 +12,21 @@ class LandingLktiController extends Controller
 	public $pamflet = 'img/keilmiahan/lkti/pamflet.jpeg';
 	public $guidebook = 'http://bit.ly/GuidebookLKTIOlimpus2021';
 	public $nominal = 'Rp35.000,00';
+	public $maintenance = true;
 
 	public function index() {
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+		
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.keilmiahan.lkti', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
-		]);
+		]);	
 	}
 
 	public function store(Request $request) {
@@ -50,8 +55,12 @@ class LandingLktiController extends Controller
 	}
 
 	public function success() {
+		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+		
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+
 		if (session('status')) {
-			$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
 			return view('landing.success', [
 				'api' => $api,
 				'whatsapp' => $this->whatsapp,
