@@ -31,7 +31,8 @@ class LandingLktiController extends Controller
 			"nama_ketua" => "required",
 			"no_wa_ketua" => "required",
 			"nim_jurusan_ketua" => "required",
-			"nama_pembimbing" => "required",
+			"foto_ketua" => "required",
+			"ktm_ketua" => "required",
 		]);
 		DB::table('pendaftaran_lkti')
 			->insert([
@@ -44,7 +45,6 @@ class LandingLktiController extends Controller
 				'nim_jurusan_anggota_1' => $request->input('nim_jurusan_anggota_1'),
 				'nama_anggota_2' => $request->input('nama_anggota_2'),
 				'nim_jurusan_anggota_2' => $request->input('nim_jurusan_anggota_2'),
-				'nama_pembimbing' => $request->input('nama_pembimbing'),
 			]);
 		return redirect()->route('landing.keilmiahan.lkti.success')->with('status', 'SUKSES!');
 	}
