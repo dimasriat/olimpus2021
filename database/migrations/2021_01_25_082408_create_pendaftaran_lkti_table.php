@@ -16,18 +16,18 @@ class CreatePendaftaranLktiTable extends Migration
 			$table->string("no_wa_ketua");
 			$table->string("nama_ketua");
 			$table->string("nim_jurusan_ketua");
-			$table->string("foto_ketua");
-			$table->string("ktm_ketua");
+			$table->string("foto_ketua")->default('');
+			$table->string("ktm_ketua")->default('');
 
 			$table->string("nama_anggota_1")->nullable();
 			$table->string("nim_jurusan_anggota_1")->nullable();
-			$table->string("foto_anggota_1");
-			$table->string("ktm_anggota_1");
+			$table->string("foto_anggota_1")->nullable()->default('');
+			$table->string("ktm_anggota_1")->nullable()->default('');
 			
 			$table->string("nama_anggota_2")->nullable();
 			$table->string("nim_jurusan_anggota_2")->nullable();
-			$table->string("foto_anggota_2");
-			$table->string("ktm_anggota_2");
+			$table->string("foto_anggota_2")->nullable()->default('');
+			$table->string("ktm_anggota_2")->nullable()->default('');
 			
 			$table->boolean("konfirmasi")->default(false);
 		});

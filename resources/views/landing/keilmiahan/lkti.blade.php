@@ -36,7 +36,7 @@
 		<div class="col-12 col-lg my-3">
 			<div class="card shadow h-100">
 				<div class="card-body">
-					<form method="POST" action="{{ route('landing.keilmiahan.lkti.store') }}">
+					<form method="POST" action="{{ route('landing.keilmiahan.lkti.store') }}" enctype="multipart/form-data">
 						@csrf
 						<div class="form-group">
 							<label for="email">Email (required):</label><br/>

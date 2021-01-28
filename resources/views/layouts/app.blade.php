@@ -12,9 +12,12 @@
 		td, th {
 			border: 1px solid lightgray;
 			padding: 0.25rem;
+			word-wrap: break-word;
 		}
 		table {
 			margin: 1rem 0;
+			table-layout: fixed;
+			width: 100%;
 		}
 	</style>
 </head>
