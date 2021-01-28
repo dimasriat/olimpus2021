@@ -3,8 +3,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LandingLktiController;
 use App\Http\Controllers\DashboardLktiController;
-use App\Http\Controllers\LandingEsaiController;
-use App\Http\Controllers\DashboardEsaiController;
+use App\Http\Controllers\LandingDebatController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -58,6 +57,13 @@ Route::get('/dashboard/pendaftaran/lkti', [DashboardLktiController::class, 'inde
 Route::put('/dashboard/pendaftaran/lkti', [DashboardLktiController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.lkti.update');
 
+Route::get('/keilmiahan/debat', [LandingDebatController::class, 'index'])
+	->name('landing.keilmiahan.debat.index');
+Route::post('/keilmiahan/debat', [LandingDebatController::class, 'store'])
+	->name('landing.keilmiahan.debat.store');
+Route::get('/keilmiahan/debat/success', [LandingDebatController::class, 'success'])
+	->name('landing.keilmiahan.debat.success');	
+	
 // Route::get('/keilmiahan/esai', [LandingEsaiController::class, 'index'])
 // 	->name('landing.keilmiahan.esai.index');
 // Route::post('/keilmiahan/esai', [LandingEsaiController::class, 'store'])

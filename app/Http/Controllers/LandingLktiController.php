@@ -31,8 +31,12 @@ class LandingLktiController extends Controller
 			"nama_ketua" => "required",
 			"no_wa_ketua" => "required",
 			"nim_jurusan_ketua" => "required",
-			"foto_ketua" => "required",
-			"ktm_ketua" => "required",
+			"foto_ketua" => "required|file|mimes:jpg,jpeg,png|size:2048",
+			"ktm_ketua" => "required|file|mimes:jpg,jpeg,png|size:2048",
+			"foto_anggota_1" => "file|mimes:jpg,jpeg,png|size:2048",
+			"ktm_anggota_1" => "file|mimes:jpg,jpeg,png|size:2048",
+			"foto_anggota_2" => "file|mimes:jpg,jpeg,png|size:2048",
+			"ktm_anggota_2" => "file|mimes:jpg,jpeg,png|size:2048",
 		]);
 		
 
