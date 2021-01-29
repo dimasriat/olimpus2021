@@ -25,6 +25,11 @@ class LandingLktiController extends Controller
 	}
 
 	public function store(Request $request) {
+		/**
+		 * Memvalidasi isi form agar sesuai dengan kriteria pendaftaran
+		 * apabila ada salah satu yang gagal, maka pendaftaran akan meminta ulang
+		 * untuk memasukkan data yang valid
+		 */
 		$request->validate([
 			"email" => "required",
 			"fakultas" => "required",
@@ -37,17 +42,18 @@ class LandingLktiController extends Controller
 			"ktm_anggota_1" => "file|mimes:jpg,jpeg,png|max:2048",
 			"foto_anggota_2" => "file|mimes:jpg,jpeg,png|max:2048",
 			"ktm_anggota_2" => "file|mimes:jpg,jpeg,png|max:2048",
-		]);
-		
+		]);		
 
-		// LOKASI PENYIMPANAN: img/pendaftar/keilmiahan/lkti/
-		$ktm_ketua = $request->file('ktm_ketua'); 			// 7_KTM_KETUA_Dimas_Riatmodjo.jpg
-		$ktm_anggota_1 = $request->file('ktm_anggota_1');	// 7_KTM_ANGGOTA_1_Dimas_Riatmodjo.jpg
-		$ktm_anggota_2 = $request->file('ktm_anggota_2');	// 7_KTM_ANGGOTA_2_Dimas_Riatmodjo.jpg
-
-		$foto_ketua = $request->file('foto_ketua');			// 7_FOTO_KETUA_Dimas_Riatmodjo.jpg
-		$foto_anggota_1 = $request->file('foto_anggota_1');	// 7_FOTO_ANGGOTA_1_Dimas_Riatmodjo.jpg
-		$foto_anggota_2 = $request->file('foto_anggota_2');	// 7_FOTO_ANGGOTA_2_Dimas_Riatmodjo.jpg
+		/**
+		 * Menyiapkan jenis input apa saja yang merupakan formulir
+		 * dalam bentuk file
+		 */
+		$ktm_ketua = $request->file('ktm_ketua'); 			
+		$ktm_anggota_1 = $request->file('ktm_anggota_1');	
+		$ktm_anggota_2 = $request->file('ktm_anggota_2');	
+		$foto_ketua = $request->file('foto_ketua');			
+		$foto_anggota_1 = $request->file('foto_anggota_1');	
+		$foto_anggota_2 = $request->file('foto_anggota_2');	
 
 
 		/**

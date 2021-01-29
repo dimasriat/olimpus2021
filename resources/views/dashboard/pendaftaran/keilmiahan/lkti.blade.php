@@ -3,9 +3,11 @@
 @section("content")
 	<h2>Pendaftaran LKTI</h2>
 
-	@if (count($table_data_confirmed))
+	<!-- DATA YANG SUDAH TERKONFIRMASI -->
 	<h3>Sudah Terkonfirmasi</h3>
+	@if (count($table_data_confirmed))
 	<table>
+		<!-- TABLE HEADING -->
 		<tr>
 			<th>Email</th>
 			<th>Nama</th>
@@ -14,6 +16,8 @@
 			<th>Whatsapp</th>
 			<th>Action</th>
 		</tr>
+
+		<!-- TABLE BODY -->
 		@foreach($table_data_confirmed as $row)
 		<tr>
 			<td>{{ $row->email }}</td>
@@ -35,9 +39,11 @@
 	</table>
 	@endif
 
-	@if (count($table_data_not_confirmed))
-	<h3>Belum Terkonfirmasi</h3>	
+	<!-- DATA YANG BELUM TERKONFIRMASI -->
+	<h3>Belum Terkonfirmasi</h3>
+	@if (count($table_data_not_confirmed))	
 	<table>
+		<!-- TABLE HEADING -->
 		<tr>
 			<th>Email</th>
 			<th>Nama</th>
@@ -46,6 +52,8 @@
 			<th>Whatsapp</th>
 			<th>Action</th>
 		</tr>
+
+		<!-- TABLE BODY -->
 		@foreach($table_data_not_confirmed as $row)
 		<tr>
 			<td>{{ $row->email }}</td>
