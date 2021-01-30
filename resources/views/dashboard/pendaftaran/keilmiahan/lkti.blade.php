@@ -9,22 +9,19 @@
 	<table>
 		<!-- TABLE HEADING -->
 		<tr>
+			<th>Action</th>
 			<th>Email</th>
 			<th>Nama</th>
 			<th>Fakultas</th>
 			<th>NIM</th>
 			<th>Whatsapp</th>
-			<th>Action</th>
+			<th>Foto Ketua</th>
+			<th>Ktm Ketua</th>
 		</tr>
 
 		<!-- TABLE BODY -->
 		@foreach($table_data_confirmed as $row)
 		<tr>
-			<td>{{ $row->email }}</td>
-			<td>{{ $row->nama_ketua }}</td>
-			<td>{{ $row->fakultas }}</td>
-			<td>{{ $row->nim_jurusan_ketua }}</td>
-			<td>{{ $row->no_wa_ketua }}</td>
 			<td>
 				<form action="{{ route('pendaftaran.lkti.update') }}" method="POST">
 					@csrf
@@ -33,6 +30,21 @@
 					<input type="hidden" name="set_value" value="0" />
 					<input type="submit" value="batalkan" />
 				</form>
+			</td>
+			<td>{{ $row->email }}</td>
+			<td>{{ $row->nama_ketua }}</td>
+			<td>{{ $row->fakultas }}</td>
+			<td>{{ $row->nim_jurusan_ketua }}</td>
+			<td>{{ $row->no_wa_ketua }}</td>
+			<td>
+				<a href="{{ asset('pendaftaran/' . $row->foto_ketua) }}">
+					<img src="{{ asset('pendaftaran/' . $row->foto_ketua) }}" />
+				</a>
+			</td>
+			<td>
+				<a href="{{ asset('pendaftaran/' . $row->ktm_ketua) }}">
+					<img src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}" />
+				</a>
 			</td>
 		</tr>
 		@endforeach
@@ -45,22 +57,19 @@
 	<table>
 		<!-- TABLE HEADING -->
 		<tr>
+			<th>Action</th>
 			<th>Email</th>
 			<th>Nama</th>
 			<th>Fakultas</th>
 			<th>NIM</th>
 			<th>Whatsapp</th>
-			<th>Action</th>
+			<th>Foto Ketua</th>
+			<th>Ktm Ketua</th>
 		</tr>
 
 		<!-- TABLE BODY -->
 		@foreach($table_data_not_confirmed as $row)
 		<tr>
-			<td>{{ $row->email }}</td>
-			<td>{{ $row->nama_ketua }}</td>
-			<td>{{ $row->fakultas }}</td>
-			<td>{{ $row->nim_jurusan_ketua }}</td>
-			<td>{{ $row->no_wa_ketua }}</td>
 			<td>
 				<form action="{{ route('pendaftaran.lkti.update') }}" method="POST">
 					@csrf
@@ -69,6 +78,21 @@
 					<input type="hidden" name="set_value" value="1" />
 					<input type="submit" value="konfirmasi" />
 				</form>
+			</td>
+			<td>{{ $row->email }}</td>
+			<td>{{ $row->nama_ketua }}</td>
+			<td>{{ $row->fakultas }}</td>
+			<td>{{ $row->nim_jurusan_ketua }}</td>
+			<td>{{ $row->no_wa_ketua }}</td>
+			<td>
+				<a href="{{ asset('pendaftaran/' . $row->foto_ketua) }}">
+					<img src="{{ asset('pendaftaran/' . $row->foto_ketua) }}" />
+				</a>
+			</td>
+			<td>
+				<a href="{{ asset('pendaftaran/' . $row->ktm_ketua) }}">
+					<img src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}" />
+				</a>
 			</td>
 		</tr>
 		@endforeach
