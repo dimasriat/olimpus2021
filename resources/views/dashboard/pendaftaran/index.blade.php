@@ -3,4 +3,5 @@
 @section("content")
 	<h2>Pendaftaran</h2>
 	<p><a href="{{ route('pendaftaran.lkti.index') }}">LKTI</a></p>
+	<p><a href="{{ route('pendaftaran.debat.index') }}">Debat</a></p>
 @endsection

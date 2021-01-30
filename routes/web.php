@@ -4,6 +4,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LandingLktiController;
 use App\Http\Controllers\DashboardLktiController;
 use App\Http\Controllers\LandingDebatController;
+use App\Http\Controllers\DashboardDebatController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -63,17 +64,10 @@ Route::post('/keilmiahan/debat', [LandingDebatController::class, 'store'])
 	->name('landing.keilmiahan.debat.store');
 Route::get('/keilmiahan/debat/success', [LandingDebatController::class, 'success'])
 	->name('landing.keilmiahan.debat.success');	
-	
-// Route::get('/keilmiahan/esai', [LandingEsaiController::class, 'index'])
-// 	->name('landing.keilmiahan.esai.index');
-// Route::post('/keilmiahan/esai', [LandingEsaiController::class, 'store'])
-// 	->name('landing.keilmiahan.esai.store');
-// Route::get('/keilmiahan/esai/success', [LandingEsaiController::class, 'success'])
-// 	->name('landing.keilmiahan.esai.success');
-// Route::get('/dashboard/pendaftaran/esai', [LandingEsaiController::class, 'index'])
-// 	->middleware(['auth'])->name('pendaftaran.esai.index');
-// Route::put('/dashboard/pendaftaran/esai', [LandingEsaiController::class, 'update'])
-// 	->middleware(['auth'])->name('pendaftaran.esai.update');
+Route::get('/dashboard/pendaftaran/debat', [DashboardDebatController::class, 'index'])
+	->middleware(['auth'])->name('pendaftaran.debat.index');
+Route::put('/dashboard/pendaftaran/debat', [DashboardDebatController::class, 'update'])
+	->middleware(['auth'])->name('pendaftaran.debat.update');
 
 require __DIR__.'/auth.php';
 

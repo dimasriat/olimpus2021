@@ -11,7 +11,7 @@
 		<tr>
 			<th>Action</th>
 			<th>Email</th>
-			<th>Nama</th>
+			<th>Nama Ketua</th>
 			<th>Fakultas</th>
 			<th>NIM</th>
 			<th>Whatsapp</th>
@@ -59,7 +59,7 @@
 		<tr>
 			<th>Action</th>
 			<th>Email</th>
-			<th>Nama</th>
+			<th>Nama Ketua</th>
 			<th>Fakultas</th>
 			<th>NIM</th>
 			<th>Whatsapp</th>
