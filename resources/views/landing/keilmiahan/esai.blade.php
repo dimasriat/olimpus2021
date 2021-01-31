@@ -67,11 +67,11 @@
 						<div class="form-group">
 							<label for="angkatan_ketua">Angkatan Ketua TIM (required):</label><br/>
 							<!-- <input id="angkatan_ketua" type="text" name="angkatan_ketua" value="{{ old('angkatan_ketua') }}" class="form-control"/> -->
-							<select id="angkatan_ketua" type="text" name="angkatan_ketua"  class="form-control">
-								<option>2017</option>
-								<option>2018</option>
-								<option>2019</option>
-								<option>2020</option>
+							<select id="angkatan_ketua" name="angkatan_ketua"  class="form-control">
+								<option {{ old('angkatan_ketua') == '2017' ? "selected" : "" }}>2017</option>
+								<option {{ old('angkatan_ketua') == '2018' ? "selected" : "" }}>2018</option>
+								<option {{ old('angkatan_ketua') == '2019' ? "selected" : "" }}>2019</option>
+								<option {{ old('angkatan_ketua') == '2020' ? "selected" : "" }}>2020</option>
 							</select>
 						</div>
 
@@ -103,11 +103,11 @@
 						<div class="form-group">
 							<label for="angkatan_anggota">Angkatan Anggota TIM:</label><br/>
 							<!-- <input id="angkatan_anggota" type="text" name="angkatan_anggota" value="{{ old('angkatan_anggota') }}" class="form-control"/> -->
-							<select id="angkatan_anggota" type="text" name="angkatan_anggota"  class="form-control">
-								<option>2017</option>
-								<option>2018</option>
-								<option>2019</option>
-								<option>2020</option>
+							<select id="angkatan_anggota" name="angkatan_anggota"  class="form-control">
+								<option {{ old('angkatan_anggota') == '2017' ? "selected" : "" }}>2017</option>
+								<option {{ old('angkatan_anggota') == '2018' ? "selected" : "" }}>2018</option>
+								<option {{ old('angkatan_anggota') == '2019' ? "selected" : "" }}>2019</option>
+								<option {{ old('angkatan_anggota') == '2020' ? "selected" : "" }}>2020</option>
 							</select>
 						</div>
 
