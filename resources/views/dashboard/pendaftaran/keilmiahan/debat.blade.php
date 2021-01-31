@@ -9,6 +9,7 @@
 	<table>
 		<!-- TABLE HEADING -->
 		<tr>
+			<th>id</th>
 			<th>Action</th>
 			<th>Nama Tim</th>
 			<th>Fakultas</th>
@@ -22,6 +23,7 @@
 		<!-- TABLE BODY -->
 		@foreach($table_data_confirmed as $row)
 		<tr>
+			<td>{{ $row->id }}</td>
 			<td>
 				<form action="{{ route('pendaftaran.debat.update') }}" method="POST">
 					@csrf
@@ -57,6 +59,7 @@
 	<table>
 		<!-- TABLE HEADING -->
 		<tr>
+			<th>id</th>
 			<th>Action</th>
 			<th>Nama Tim</th>
 			<th>Fakultas</th>
@@ -70,6 +73,7 @@
 		<!-- TABLE BODY -->
 		@foreach($table_data_not_confirmed as $row)
 		<tr>
+			<td>{{ $row->id }}</td>
 			<td>
 				<form action="{{ route('pendaftaran.debat.update') }}" method="POST">
 					@csrf

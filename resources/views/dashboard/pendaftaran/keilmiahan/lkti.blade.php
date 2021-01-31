@@ -9,6 +9,7 @@
 	<table>
 		<!-- TABLE HEADING -->
 		<tr>
+			<th>id</th>
 			<th>Action</th>
 			<th>Email</th>
 			<th>Nama Ketua</th>
@@ -22,6 +23,7 @@
 		<!-- TABLE BODY -->
 		@foreach($table_data_confirmed as $row)
 		<tr>
+			<td>{{ $row->id }}</td>
 			<td>
 				<form action="{{ route('pendaftaran.lkti.update') }}" method="POST">
 					@csrf
@@ -31,6 +33,7 @@
 					<input type="submit" value="batalkan" />
 				</form>
 			</td>
+			<td>{{ $row->id }}</td>
 			<td>{{ $row->email }}</td>
 			<td>{{ $row->nama_ketua }}</td>
 			<td>{{ $row->fakultas }}</td>
@@ -57,6 +60,7 @@
 	<table>
 		<!-- TABLE HEADING -->
 		<tr>
+			<th>id</th>
 			<th>Action</th>
 			<th>Email</th>
 			<th>Nama Ketua</th>
@@ -70,6 +74,7 @@
 		<!-- TABLE BODY -->
 		@foreach($table_data_not_confirmed as $row)
 		<tr>
+			<td>{{ $row->id }}</td>
 			<td>
 				<form action="{{ route('pendaftaran.lkti.update') }}" method="POST">
 					@csrf
