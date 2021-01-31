@@ -25,79 +25,63 @@ class LandingEsaiController extends Controller
 	}
 
 	public function store(Request $request) {
+		// return response()->json($request->input());
 		$request->validate([
-			"nama_tim" => "required",
 			"fakultas" => "required",
+			"no_wa_ketua" => "required",
 
-			"nama_speaker_1" => "required",
-			"no_wa_speaker_1" => "required",
-			"angkatan_nim_speaker_1" => "required",
-			"foto_speaker_1" => "required|file|mimes:jpg,jpeg,png|max:2048",
-			"ktm_speaker_1" => "required|file|mimes:jpg,jpeg,png|max:2048",
-
-			"nama_speaker_2" => "required",
-			"no_wa_speaker_2" => "required",
-			"angkatan_nim_speaker_2" => "required",
-			"foto_speaker_2" => "file|mimes:jpg,jpeg,png|max:2048",
-			"ktm_speaker_2" => "file|mimes:jpg,jpeg,png|max:2048",
-
-			"nama_speaker_3" => "required",
-			"no_wa_speaker_3" => "required",
-			"angkatan_nim_speaker_3" => "required",			
-			"foto_speaker_3" => "file|mimes:jpg,jpeg,png|max:2048",
-			"ktm_speaker_3" => "file|mimes:jpg,jpeg,png|max:2048",
+			"nama_ketua" => "required",
+			"jurusan_ketua" => "required",
+			"angkatan_ketua" => "required",
+			"foto_ketua" => "required|file|mimes:jpg,jpeg,png|max:2048",
+			"ktm_ketua" => "required|file|mimes:jpg,jpeg,png|max:2048",
+			
+			"foto_anggota" => "file|mimes:jpg,jpeg,png|max:2048",
+			"ktm_anggota" => "file|mimes:jpg,jpeg,png|max:2048",
 		]);
 		
 
 		// LOKASI PENYIMPANAN: img/pendaftar/keilmiahan/debat/
-		$ktm_speaker_1 = $request->file('ktm_speaker_1'); 	
-		$ktm_speaker_2 = $request->file('ktm_speaker_2');	
-		$ktm_speaker_3 = $request->file('ktm_speaker_3');	
+		$ktm_ketua = $request->file('ktm_ketua'); 	
+		$ktm_anggota = $request->file('ktm_anggota');	
 
-		$foto_speaker_1 = $request->file('foto_speaker_1');
-		$foto_speaker_2 = $request->file('foto_speaker_2');
-		$foto_speaker_3 = $request->file('foto_speaker_3');
+		$foto_ketua = $request->file('foto_ketua');
+		$foto_anggota = $request->file('foto_anggota');
 
 
 		/**
 		 * Menambahkan data input text ke database biar dapet row_id nya biar bisa
 		 * membari nama file yang diupload sesuai rownya
 		 */
-		$row_id = DB::table('pendaftaran_debat')
+		$row_id = DB::table('pendaftaran_esai')
 			->insertGetId([
-				'nama_tim' => $request->input('nama_tim'),
 				'fakultas' => $request->input('fakultas'),
+				'no_wa_ketua' => $request->input('no_wa_ketua'),
 
-				'nama_speaker_1' => $request->input('nama_speaker_1'),
-				'no_wa_speaker_1' => $request->input('no_wa_speaker_1'),
-				'angkatan_nim_speaker_1' => $request->input('angkatan_nim_speaker_1'),
+				'nama_ketua' => $request->input('nama_ketua'),
+				'jurusan_ketua' => $request->input('jurusan_ketua'),
+				'angkatan_ketua' => $request->input('angkatan_ketua'),
 
-				'nama_speaker_2' => $request->input('nama_speaker_2'),
-				'no_wa_speaker_2' => $request->input('no_wa_speaker_2'),
-				'angkatan_nim_speaker_2' => $request->input('angkatan_nim_speaker_2'),
-				
-				'nama_speaker_3' => $request->input('nama_speaker_3'),
-				'no_wa_speaker_3' => $request->input('no_wa_speaker_3'),
-				'angkatan_nim_speaker_3' => $request->input('angkatan_nim_speaker_3'),
+				'nama_anggota' => $request->input('nama_anggota'),
+				'jurusan_anggota' => $request->input('jurusan_anggota'),
+				'angkatan_anggota' => $request->input('angkatan_anggota'),
 			]);
 		
 		/**
 		 * row_id udah dapet sekarang tinggal mindahin filenya ke folder public yang udah dibikin
 		 * dan akhirnya tinggal mengupdate isi tabelnya sesuai row_id yang udah didapat tadi
-		 * dengan lokasi filenya ktm dan foto dari speaker_1, speaker_1, dan speaker_2
+		 * dengan lokasi filenya ktm dan foto dari ketua, ketua, dan anggota
 		 * 
 		 * perintah store itu berguna untuk memindahkan file sekaligus mereturn lokasi dari file
 		 */
 		$nama_file = [
 			'ktm' => [
-				'speaker_1' => $ktm_speaker_1 ? $ktm_speaker_1->store('keilmiahan/debat/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'speaker_2' => $ktm_speaker_2 ? $ktm_speaker_2->store('keilmiahan/debat/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'speaker_3' => $ktm_speaker_3 ? $ktm_speaker_3->store('keilmiahan/debat/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'ketua' => $ktm_ketua ? $ktm_ketua->store('keilmiahan/esai/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota' => $ktm_anggota ? $ktm_anggota->store('keilmiahan/esai/' . $row_id, ["disk" => 'pendaftaran']) : "",
 			],
 			'foto' => [
-				'speaker_1' => $foto_speaker_1 ? $foto_speaker_1->store('keilmiahan/debat/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'speaker_2' => $foto_speaker_2 ? $foto_speaker_2->store('keilmiahan/debat/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'speaker_3' => $foto_speaker_3 ? $foto_speaker_3->store('keilmiahan/debat/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'ketua' => $foto_ketua ? $foto_ketua->store('keilmiahan/esai/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota' => $foto_anggota ? $foto_anggota->store('keilmiahan/esai/' . $row_id, ["disk" => 'pendaftaran']) : "",
 			],
 		];
 
@@ -105,18 +89,16 @@ class LandingEsaiController extends Controller
 		 * file sudah dipindahkan dan tiap-tiap file juga udah tercatat lokasi-lokasinya di array $nama_file
 		 * sekarang tinggain di update isi tabelnya
 		 */
-		DB::table('pendaftaran_debat')
+		DB::table('pendaftaran_esai')
 			->where('id', '=', $row_id)
 			->update([
-				'ktm_speaker_1' => $nama_file['ktm']['speaker_1'],
-				'ktm_speaker_2' => $nama_file['ktm']['speaker_2'],
-				'ktm_speaker_3' => $nama_file['ktm']['speaker_3'],
-				'foto_speaker_1' => $nama_file['foto']['speaker_1'],
-				'foto_speaker_2' => $nama_file['foto']['speaker_2'],
-				'foto_speaker_3' => $nama_file['foto']['speaker_3'],
+				'ktm_ketua' => $nama_file['ktm']['ketua'],
+				'ktm_anggota' => $nama_file['ktm']['anggota'],
+				'foto_ketua' => $nama_file['foto']['ketua'],
+				'foto_anggota' => $nama_file['foto']['anggota'],
 			]);
 
-		return redirect()->route('landing.keilmiahan.debat.success')->with('status', 'SUKSES!');
+		return redirect()->route('landing.keilmiahan.esai.success')->with('status', 'SUKSES!');
 	}
 
 	public function success() {

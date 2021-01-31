@@ -54,8 +54,8 @@ return [
 		
 		'pendaftaran' => [
 			'driver' => 'local',
-			// 'root'   => public_path() . '/pendaftaran',
-			'root'   => public_path() . '/../../public_html/pendaftaran',
+			'root'   => public_path() . '/pendaftaran',
+			// 'root'   => public_path() . '/../../public_html/pendaftaran',
 		]
 
     ],
