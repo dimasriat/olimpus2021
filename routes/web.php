@@ -5,6 +5,7 @@ use App\Http\Controllers\LandingLktiController;
 use App\Http\Controllers\DashboardLktiController;
 use App\Http\Controllers\LandingDebatController;
 use App\Http\Controllers\DashboardDebatController;
+use App\Http\Controllers\LandingEsaiController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -68,6 +69,13 @@ Route::get('/dashboard/pendaftaran/debat', [DashboardDebatController::class, 'in
 	->middleware(['auth'])->name('pendaftaran.debat.index');
 Route::put('/dashboard/pendaftaran/debat', [DashboardDebatController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.debat.update');
+
+Route::get('/keilmiahan/esai', [LandingEsaiController::class, 'index'])
+	->name('landing.keilmiahan.esai.index');
+Route::post('/keilmiahan/esai', [LandingEsaiController::class, 'store'])
+	->name('landing.keilmiahan.esai.store');
+Route::get('/keilmiahan/esai/success', [LandingEsaiController::class, 'success'])
+	->name('landing.keilmiahan.esai.success');	
 
 require __DIR__.'/auth.php';
 
