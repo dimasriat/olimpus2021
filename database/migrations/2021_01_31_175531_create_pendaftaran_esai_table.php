@@ -24,9 +24,9 @@ class CreatePendaftaranEsaiTable extends Migration
 			$table->string("foto_ketua")->default('');
 			$table->string("ktm_ketua")->default('');
 
-			$table->string("nama_anggota");
-			$table->string("jurusan_anggota");
-			$table->string("angkatan_anggota");
+			$table->string("nama_anggota")->nullable();
+			$table->string("jurusan_anggota")->nullable();
+			$table->string("angkatan_anggota")->nullable();
 			$table->string("foto_anggota")->default('');
 			$table->string("ktm_anggota")->default('');
 
