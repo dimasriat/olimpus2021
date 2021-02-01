@@ -10,7 +10,7 @@ class LandingEsaiController extends Controller
 	public $cabang_lomba = 'Esai';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285156134515';
 	public $pamflet = 'img/keilmiahan/esai/pamflet.png';
-	public $guidebook = 'http://bit.ly/GuidebookEsaiOlimpus21';
+	public $guidebook = 'http://bit.ly/GuidebookEsaiOlimpus2021';
 	public $nominal = 'Rp20.000,00';
 
 	public function index() {
