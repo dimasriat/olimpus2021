@@ -18,6 +18,16 @@
 			<th>Whatsapp Speaker 1</th>
 			<th>Foto Speaker 1</th>
 			<th>Ktm Speaker 1</th>
+			<th>Nama Speaker 2</th>
+			<th>Angkatan NIM Speaker 2</th>
+			<th>Whatsapp Speaker 2</th>
+			<th>Foto Speaker 2</th>
+			<th>Ktm Speaker 2</th>
+			<th>Nama Speaker 3</th>
+			<th>Angkatan NIM Speaker 3</th>
+			<th>Whatsapp Speaker 3</th>
+			<th>Foto Speaker 3</th>
+			<th>Ktm Speaker 3</th>
 		</tr>
 
 		<!-- TABLE BODY -->
@@ -38,16 +48,18 @@
 			<td>{{ $row->nama_speaker_1 }}</td>
 			<td>{{ $row->angkatan_nim_speaker_1 }}</td>
 			<td>{{ $row->no_wa_speaker_1 }}</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->foto_speaker_1) }}">
-					<img src="{{ asset('pendaftaran/' . $row->foto_speaker_1) }}" />
-				</a>
-			</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->ktm_speaker_1) }}">
-					<img src="{{ asset('pendaftaran/' . $row->ktm_speaker_1) }}" />
-				</a>
-			</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_speaker_1) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_speaker_1) }}"/></td>
+			<td>{{ $row->nama_speaker_2 }}</td>
+			<td>{{ $row->angkatan_nim_speaker_2 }}</td>
+			<td>{{ $row->no_wa_speaker_2 }}</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_speaker_2) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_speaker_2) }}"/></td>
+			<td>{{ $row->nama_speaker_3 }}</td>
+			<td>{{ $row->angkatan_nim_speaker_3 }}</td>
+			<td>{{ $row->no_wa_speaker_3 }}</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_speaker_3) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_speaker_3) }}"/></td>
 		</tr>
 		@endforeach
 	</table>
@@ -68,6 +80,16 @@
 			<th>Whatsapp Speaker 1</th>
 			<th>Foto Speaker 1</th>
 			<th>Ktm Speaker 1</th>
+			<th>Nama Speaker 2</th>
+			<th>Angkatan NIM Speaker 2</th>
+			<th>Whatsapp Speaker 2</th>
+			<th>Foto Speaker 2</th>
+			<th>Ktm Speaker 2</th>
+			<th>Nama Speaker 3</th>
+			<th>Angkatan NIM Speaker 3</th>
+			<th>Whatsapp Speaker 3</th>
+			<th>Foto Speaker 3</th>
+			<th>Ktm Speaker 3</th>
 		</tr>
 
 		<!-- TABLE BODY -->
@@ -88,16 +110,18 @@
 			<td>{{ $row->nama_speaker_1 }}</td>
 			<td>{{ $row->angkatan_nim_speaker_1 }}</td>
 			<td>{{ $row->no_wa_speaker_1 }}</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->foto_speaker_1) }}">
-					<img src="{{ asset('pendaftaran/' . $row->foto_speaker_1) }}" />
-				</a>
-			</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->ktm_speaker_1) }}">
-					<img src="{{ asset('pendaftaran/' . $row->ktm_speaker_1) }}" />
-				</a>
-			</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_speaker_1) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_speaker_1) }}"/></td>
+			<td>{{ $row->nama_speaker_2 }}</td>
+			<td>{{ $row->angkatan_nim_speaker_2 }}</td>
+			<td>{{ $row->no_wa_speaker_2 }}</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_speaker_2) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_speaker_2) }}"/></td>
+			<td>{{ $row->nama_speaker_3 }}</td>
+			<td>{{ $row->angkatan_nim_speaker_3 }}</td>
+			<td>{{ $row->no_wa_speaker_3 }}</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_speaker_3) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_speaker_3) }}"/></td>
 		</tr>
 		@endforeach
 	</table>

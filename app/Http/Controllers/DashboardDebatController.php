@@ -9,12 +9,10 @@ class DashboardDebatController extends Controller
 {
 	public function index(Request $request) {
 		$table_data_not_confirmed = DB::table('pendaftaran_debat')
-			->select('id', 'nama_tim', 'fakultas', 'nama_speaker_1', 'angkatan_nim_speaker_1', 'no_wa_speaker_1', 'foto_speaker_1', 'ktm_speaker_1')
 			->where('konfirmasi', '=', false)
 			->orderBy('fakultas', 'ASC')
 			->get();
 		$table_data_confirmed = DB::table('pendaftaran_debat')
-			->select('id', 'nama_tim', 'fakultas', 'nama_speaker_1', 'angkatan_nim_speaker_1', 'no_wa_speaker_1', 'foto_speaker_1', 'ktm_speaker_1')
 			->where('konfirmasi', '=', true)
 			->orderBy('fakultas', 'ASC')
 			->get();

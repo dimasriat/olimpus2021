@@ -9,12 +9,10 @@ class DashboardEsaiController extends Controller
 {
     public function index(Request $request) {
 		$table_data_not_confirmed = DB::table('pendaftaran_esai')
-			->select('id', 'fakultas', 'nama_ketua', 'angkatan_ketua', 'jurusan_ketua', 'no_wa_ketua', 'foto_ketua', 'ktm_ketua')
 			->where('konfirmasi', '=', false)
 			->orderBy('fakultas', 'ASC')
 			->get();
 		$table_data_confirmed = DB::table('pendaftaran_esai')
-			->select('id', 'fakultas', 'nama_ketua', 'angkatan_ketua', 'jurusan_ketua', 'no_wa_ketua', 'foto_ketua', 'ktm_ketua')
 			->where('konfirmasi', '=', true)
 			->orderBy('fakultas', 'ASC')
 			->get();

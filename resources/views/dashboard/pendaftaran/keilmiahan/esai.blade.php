@@ -11,13 +11,18 @@
 		<tr>
 			<th>id</th>
 			<th>Action</th>
-			<th>Nama Ketua</th>
 			<th>Fakultas</th>
-			<th>Jurusan</th>
-			<th>Angkatan</th>
 			<th>Whatsapp</th>
-			<th>Foto Ketua</th>
+			<th>Nama Ketua</th>
+			<th>Jurusan Ketua</th>
+			<th>Angkatan Ketua</th>
 			<th>Ktm Ketua</th>
+			<th>Foto Ketua</th>
+			<th>Nama Anggota</th>
+			<th>Jurusan Anggota</th>
+			<th>Angkatan Anggota</th>
+			<th>Ktm Anggota</th>
+			<th>Foto Anggota</th>
 		</tr>
 
 		<!-- TABLE BODY -->
@@ -33,21 +38,18 @@
 					<input type="submit" value="batalkan" />
 				</form>
 			</td>
-			<td>{{ $row->nama_ketua }}</td>
 			<td>{{ $row->fakultas }}</td>
+			<td>{{ $row->no_wa_ketua }}</td>
+			<td>{{ $row->nama_ketua }}</td>
 			<td>{{ $row->jurusan_ketua }}</td>
 			<td>{{ $row->angkatan_ketua }}</td>
-			<td>{{ $row->no_wa_ketua }}</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->foto_ketua) }}">
-					<img src="{{ asset('pendaftaran/' . $row->foto_ketua) }}" />
-				</a>
-			</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->ktm_ketua) }}">
-					<img src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}" />
-				</a>
-			</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_ketua) }}"/></td>
+			<td>{{ $row->nama_anggota }}</td>
+			<td>{{ $row->jurusan_anggota }}</td>
+			<td>{{ $row->angkatan_anggota }}</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_anggota) }}"/></td>
 		</tr>
 		@endforeach
 	</table>
@@ -61,13 +63,18 @@
 		<tr>
 			<th>id</th>
 			<th>Action</th>
-			<th>Nama Ketua</th>
 			<th>Fakultas</th>
-			<th>Jurusan</th>
-			<th>Angkatan</th>
 			<th>Whatsapp</th>
-			<th>Foto Ketua</th>
+			<th>Nama Ketua</th>
+			<th>Jurusan Ketua</th>
+			<th>Angkatan Ketua</th>
 			<th>Ktm Ketua</th>
+			<th>Foto Ketua</th>
+			<th>Nama Anggota</th>
+			<th>Jurusan Anggota</th>
+			<th>Angkatan Anggota</th>
+			<th>Ktm Anggota</th>
+			<th>Foto Anggota</th>
 		</tr>
 
 		<!-- TABLE BODY -->
@@ -83,21 +90,18 @@
 					<input type="submit" value="konfirmasi" />
 				</form>
 			</td>
-			<td>{{ $row->nama_ketua }}</td>
 			<td>{{ $row->fakultas }}</td>
+			<td>{{ $row->no_wa_ketua }}</td>
+			<td>{{ $row->nama_ketua }}</td>
 			<td>{{ $row->jurusan_ketua }}</td>
 			<td>{{ $row->angkatan_ketua }}</td>
-			<td>{{ $row->no_wa_ketua }}</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->foto_ketua) }}">
-					<img src="{{ asset('pendaftaran/' . $row->foto_ketua) }}" />
-				</a>
-			</td>
-			<td>
-				<a href="{{ asset('pendaftaran/' . $row->ktm_ketua) }}">
-					<img src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}" />
-				</a>
-			</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_ketua) }}"/></td>
+			<td>{{ $row->nama_anggota }}</td>
+			<td>{{ $row->jurusan_anggota }}</td>
+			<td>{{ $row->angkatan_anggota }}</td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota) }}"/></td>
+			<td><x-image-link src="{{ asset('pendaftaran/' . $row->foto_anggota) }}"/></td>
 		</tr>
 		@endforeach
 	</table>
