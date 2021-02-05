@@ -28,6 +28,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-lg-4 col-12 my-3">
+			<div class="card shadow h-100">
+				<div class="card-body">
+					<p class="text-center font-weight-bold h3 text-primary">Poster</p>
+					<a href="{{ route('landing.keilmiahan.poster.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-12 my-3">
+			<div class="card shadow h-100">
+				<div class="card-body">
+					<p class="text-center font-weight-bold h3 text-primary">Speech</p>
+					<a href="{{ route('landing.keilmiahan.speech.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </x-container>
 @endsection

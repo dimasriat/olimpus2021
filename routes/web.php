@@ -48,43 +48,8 @@ Route::get('/dashboard/pendaftaran', function(){
 	return view('dashboard.pendaftaran.index');
 })->middleware(['auth'])->name('pendaftaran.index');
 
-
-Route::get('/keilmiahan/lkti', [LandingLktiController::class, 'index'])
-	->name('landing.keilmiahan.lkti.index');
-Route::post('/keilmiahan/lkti', [LandingLktiController::class, 'store'])
-	->name('landing.keilmiahan.lkti.store');
-Route::get('/keilmiahan/lkti/success', [LandingLktiController::class, 'success'])
-	->name('landing.keilmiahan.lkti.success');
-Route::get('/dashboard/pendaftaran/lkti', [DashboardLktiController::class, 'index'])
-	->middleware(['auth'])->name('pendaftaran.lkti.index');
-Route::put('/dashboard/pendaftaran/lkti', [DashboardLktiController::class, 'update'])
-	->middleware(['auth'])->name('pendaftaran.lkti.update');
-
-Route::get('/keilmiahan/debat', [LandingDebatController::class, 'index'])
-	->name('landing.keilmiahan.debat.index');
-Route::post('/keilmiahan/debat', [LandingDebatController::class, 'store'])
-	->name('landing.keilmiahan.debat.store');
-Route::get('/keilmiahan/debat/success', [LandingDebatController::class, 'success'])
-	->name('landing.keilmiahan.debat.success');	
-Route::get('/dashboard/pendaftaran/debat', [DashboardDebatController::class, 'index'])
-	->middleware(['auth'])->name('pendaftaran.debat.index');
-Route::put('/dashboard/pendaftaran/debat', [DashboardDebatController::class, 'update'])
-	->middleware(['auth'])->name('pendaftaran.debat.update');
-
-Route::get('/keilmiahan/esai', [LandingEsaiController::class, 'index'])
-	->name('landing.keilmiahan.esai.index');
-Route::post('/keilmiahan/esai', [LandingEsaiController::class, 'store'])
-	->name('landing.keilmiahan.esai.store');
-Route::get('/keilmiahan/esai/success', [LandingEsaiController::class, 'success'])
-	->name('landing.keilmiahan.esai.success');	
-Route::get('/dashboard/pendaftaran/esai', [DashboardEsaiController::class, 'index'])
-	->middleware(['auth'])->name('pendaftaran.esai.index');
-Route::put('/dashboard/pendaftaran/esai', [DashboardEsaiController::class, 'update'])
-	->middleware(['auth'])->name('pendaftaran.esai.update');
-
+require __DIR__.'/landing/olahraga.php';
+require __DIR__.'/landing/senibudaya.php';
+require __DIR__.'/landing/keilmiahan.php';
+require __DIR__.'/landing/apresiasi.php';
 require __DIR__.'/auth.php';
-
-/**
- *  "created_at" =>  date('Y-m-d H:i:s'),
- * 	"updated_at" => date('Y-m-d H:i:s'),
- */

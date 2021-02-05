@@ -7,7 +7,32 @@
 		<div class="col-lg-4 col-12 my-3">
 			<div class="card shadow h-100">
 				<div class="card-body">
-					<p class="text-center font-weight-bold h3 text-warning">cooming soon</p>
+					<p class="text-center font-weight-bold h3 text-primary">Seni Rupa</p>
+					<a href="{{ route('landing.senibudaya.senirupa.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-12 my-3">
+			<div class="card shadow h-100">
+				<div class="card-body">
+					<p class="text-center font-weight-bold h3 text-primary">Seni Musik</p>
+					<a href="{{ route('landing.senibudaya.senimusik.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-12 my-3">
+			<div class="card shadow h-100">
+				<div class="card-body">
+					<p class="text-center font-weight-bold h3 text-primary">Seni Tari</p>
+					<a href="{{ route('landing.senibudaya.senitari.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-12 my-3">
+			<div class="card shadow h-100">
+				<div class="card-body">
+					<p class="text-center font-weight-bold h3 text-primary">Seni Sastra</p>
+					<a href="{{ route('landing.senibudaya.senisastra.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
 				</div>
 			</div>
 		</div>
