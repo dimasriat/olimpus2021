@@ -9,6 +9,8 @@ use App\Http\Controllers\LandingDebatController;
 use App\Http\Controllers\DashboardDebatController;
 use App\Http\Controllers\LandingEsaiController;
 use App\Http\Controllers\DashboardEsaiController;
+use App\Http\Controllers\LandingSpeechController;
+use App\Http\Controllers\DashboardSpeechController;
 
 Route::get('/keilmiahan/lkti', [LandingLktiController::class, 'index'])
 	->name('landing.keilmiahan.lkti.index');
@@ -43,7 +45,21 @@ Route::get('/dashboard/pendaftaran/esai', [DashboardEsaiController::class, 'inde
 Route::put('/dashboard/pendaftaran/esai', [DashboardEsaiController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.esai.update');
 
+Route::get('/keilmiahan/speech', [LandingSpeechController::class, 'index'])
+	->name('landing.keilmiahan.speech.index');
+Route::post('/keilmiahan/speech', [LandingSpeechController::class, 'store'])
+	->name('landing.keilmiahan.speech.store');
+Route::get('/keilmiahan/speech/success', [LandingSpeechController::class, 'success'])
+	->name('landing.keilmiahan.speech.success');	
+Route::get('/dashboard/pendaftaran/speech', [DashboardSpeechController::class, 'index'])
+	->middleware(['auth'])->name('pendaftaran.speech.index');
+Route::put('/dashboard/pendaftaran/speech', [DashboardSpeechController::class, 'update'])
+	->middleware(['auth'])->name('pendaftaran.speech.update');
+
 Route::get('/keilmiahan/poster', [LandingMaintenanceController::class, "index"])
 	->name('landing.keilmiahan.poster.index');
+
+/*	
 Route::get('/keilmiahan/speech', [LandingMaintenanceController::class, "index"])
 	->name('landing.keilmiahan.speech.index');
+*/
