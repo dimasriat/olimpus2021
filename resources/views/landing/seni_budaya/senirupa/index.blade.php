@@ -7,16 +7,16 @@
 		<div class="col-lg-4 col-12 my-3">
 			<div class="card shadow h-100">
 				<div class="card-body">
-					<p class="text-center font-weight-bold h3 text-primary">Solo Vocal</p>
-					<a href="{{ route('landing.senibudaya.senirupa.solovocal.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+					<p class="text-center font-weight-bold h3 text-primary">Komik Strip</p>
+					<a href="{{ route('landing.senibudaya.senirupa.komikstrip.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-12 my-3">
 			<div class="card shadow h-100">
 				<div class="card-body">
-					<p class="text-center font-weight-bold h3 text-primary">Music Group</p>
-					<a href="{{ route('landing.senibudaya.senirupa.musicgroup.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+					<p class="text-center font-weight-bold h3 text-primary">Seni Lukis</p>
+					<a href="{{ route('landing.senibudaya.senirupa.senilukis.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
 				</div>
 			</div>
 		</div>
