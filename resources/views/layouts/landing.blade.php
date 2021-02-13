@@ -24,7 +24,7 @@
 					<a href="{{ route('landing.olahraga.index') }}" class="nav-link">Olahraga</a>
 				</li>
 				<li class="nav-item">
-					<a href="{{ route('landing.seni_budaya.index') }}" class="nav-link">Seni Budaya</a>
+					<a href="{{ route('landing.senibudaya.index') }}" class="nav-link">Seni Budaya</a>
 				</li>
 				<li class="nav-item">
 					<a href="{{ route('landing.keilmiahan.index') }}" class="nav-link">Keilmiahan</a>

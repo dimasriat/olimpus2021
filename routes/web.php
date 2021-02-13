@@ -23,8 +23,8 @@ Route::get('/olahraga', function () {
 })->name('landing.olahraga.index');
 Route::get('/senibudaya', function () {
 	$api = json_decode(file_get_contents(__DIR__."/../resources/api/api.json"), true);
-	return view('landing.seni_budaya.index', ['api' => $api]);
-})->name('landing.seni_budaya.index');
+	return view('landing.senibudaya.index', ['api' => $api]);
+})->name('landing.senibudaya.index');
 Route::get('/keilmiahan', function () {
 	$api = json_decode(file_get_contents(__DIR__."/../resources/api/api.json"), true);
 	return view('landing.keilmiahan.index', ['api' => $api]);
