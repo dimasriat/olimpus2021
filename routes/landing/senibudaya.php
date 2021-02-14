@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\DashboardSeniMusikMusicGroupController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingMaintenanceController;
 use App\Http\Controllers\LandingSeniMusikSoloVocalController;
 use App\Http\Controllers\DashboardSeniMusikSoloVocalController;
+use App\Http\Controllers\LandingSeniMusikMusicGroupController;
 
 Route::get('/senibudaya/senirupa', function() {
 	$api = json_decode(file_get_contents(__DIR__."/../../resources/api/api.json"), true);
@@ -37,7 +39,11 @@ Route::get('/senibudaya/senitari/taritradisional', [LandingMaintenanceController
 	->name('landing.senibudaya.senitari.taritradisional.index');
 Route::get('/senibudaya/senitari/tarimodern', [LandingMaintenanceController::class, "index"])
 	->name('landing.senibudaya.senitari.tarimodern.index');
-	
+
+
+/**
+ * SENI MUSIK
+ */
 Route::get('/senibudaya/senimusik', function() {
 	$api = json_decode(file_get_contents(__DIR__."/../../resources/api/api.json"), true);
 	return view('landing.senibudaya.senimusik.index', ['api' => $api]);
@@ -54,5 +60,14 @@ Route::get('/dashboard/pendaftaran/senimusik/solovocal', [DashboardSeniMusikSolo
 Route::put('/dashboard/pendaftaran/senimusik/solovocal', [DashboardSeniMusikSoloVocalController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.senimusik.solovocal.update');
 
-Route::get('/senibudaya/senimusik/musicgroup', [LandingMaintenanceController::class, "index"])
+Route::get('/senibudaya/senimusik/musicgroup', [LandingSeniMusikMusicGroupController::class, "index"])
 	->name('landing.senibudaya.senimusik.musicgroup.index');
+Route::post('/senibudaya/senimusik/musicgroup', [LandingSeniMusikMusicGroupController::class, "store"])
+	->name('landing.senibudaya.senimusik.musicgroup.store');
+Route::get('/senibudaya/senimusik/musicgroup/success', [LandingSeniMusikMusicGroupController::class, "success"])
+	->name('landing.senibudaya.senimusik.musicgroup.success');
+Route::get('/dashboard/pendaftaran/senimusik/musicgroup', [DashboardSeniMusikMusicGroupController::class, 'index'])
+	->middleware(['auth'])->name('pendaftaran.senimusik.musicgroup.index');
+Route::put('/dashboard/pendaftaran/senimusik/musicgroup', [DashboardSeniMusikMusicGroupController::class, 'update'])
+	->middleware(['auth'])->name('pendaftaran.senimusik.musicgroup.update');
+	

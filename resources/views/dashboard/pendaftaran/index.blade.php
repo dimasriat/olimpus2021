@@ -7,5 +7,6 @@
 	<p><a href="{{ route('pendaftaran.esai.index') }}">Esai</a></p>
 	<p><a href="{{ route('pendaftaran.speech.index') }}">Speech</a></p>
 	<p><a href="{{ route('pendaftaran.senimusik.solovocal.index') }}">Solo Vocal</a></p>
+	<p><a href="{{ route('pendaftaran.senimusik.musicgroup.index') }}">Music Group</a></p>
 	<p><a href="{{ route('pendaftaran.dutakampus.index') }}">Duta Kampus</a></p>
 @endsection
