@@ -10,11 +10,11 @@ class DashboardSpeechController extends Controller
     public function index(Request $request) {
 		$table_data_not_confirmed = DB::table('pendaftaran_speech')
 			->where('konfirmasi', '=', false)
-			->orderBy('fakultas', 'ASC')
+			->orderBy('id', 'ASC')
 			->get();
 		$table_data_confirmed = DB::table('pendaftaran_speech')
 			->where('konfirmasi', '=', true)
-			->orderBy('fakultas', 'ASC')
+			->orderBy('id', 'ASC')
 			->get();
 		return view('dashboard.pendaftaran.keilmiahan.speech', [
 			'table_data_not_confirmed' => $table_data_not_confirmed,

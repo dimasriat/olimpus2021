@@ -15,7 +15,17 @@ class CreatePendaftaranDutakampusTable extends Migration
     {
         Schema::create('pendaftaran_dutakampus', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string("email");
+            $table->string("fakultas");
+
+            $table->string("no_wa_peserta");
+            $table->string("nama_peserta");
+            $table->string("nim_peserta");
+            $table->string("jurusan_peserta");
+            $table->string("foto_peserta")->default('');
+            $table->string("ktm_peserta")->default('');
+
+            $table->boolean("konfirmasi")->default(false);
         });
     }
 

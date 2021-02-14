@@ -10,11 +10,11 @@ class DashboardLktiController extends Controller
 	public function index(Request $request) {
 		$table_data_not_confirmed = DB::table('pendaftaran_lkti')
 			->where('konfirmasi', '=', false)
-			->orderBy('fakultas', 'ASC')
+			->orderBy('id', 'ASC')
 			->get();
 		$table_data_confirmed = DB::table('pendaftaran_lkti')
 			->where('konfirmasi', '=', true)
-			->orderBy('fakultas', 'ASC')
+			->orderBy('id', 'ASC')
 			->get();
 		return view('dashboard.pendaftaran.keilmiahan.lkti', [
 			'table_data_not_confirmed' => $table_data_not_confirmed,

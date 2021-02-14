@@ -5,18 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class DashboardSeniMusikSoloVocalController extends Controller
+class DashboardDutaKampusController extends Controller
 {
 	public function index(Request $request) {
-		$table_data_not_confirmed = DB::table('pendaftaran_senimusik_solovocal')
+		$table_data_not_confirmed = DB::table('pendaftaran_dutakampus')
 			->where('konfirmasi', '=', false)
 			->orderBy('id', 'ASC')
 			->get();
-		$table_data_confirmed = DB::table('pendaftaran_senimusik_solovocal')
+		$table_data_confirmed = DB::table('pendaftaran_dutakampus')
 			->where('konfirmasi', '=', true)
 			->orderBy('id', 'ASC')
 			->get();
-		return view('dashboard.pendaftaran.senibudaya.senimusik.solovocal', [
+		return view('dashboard.pendaftaran.apresiasi.dutakampus', [
 			'table_data_not_confirmed' => $table_data_not_confirmed,
 			'table_data_confirmed' => $table_data_confirmed,
 		]);
@@ -27,9 +27,9 @@ class DashboardSeniMusikSoloVocalController extends Controller
 			$konfirmasi = false;
 		}
 		$row_id = intval($request->input('row_id'));
-		DB::table('pendaftaran_senimusik_solovocal')
+		DB::table('pendaftaran_dutakampus')
 			->where('id', '=', $row_id)
 			->update(['konfirmasi' => $konfirmasi]);
-		return redirect()->route('pendaftaran.senimusik.solovocal.index');
+		return redirect()->route('pendaftaran.dutakampus.index');
 	}
 }
