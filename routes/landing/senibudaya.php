@@ -6,6 +6,12 @@ use App\Http\Controllers\LandingMaintenanceController;
 /**
  * DASHBOARD CONTROLLER
  */
+use App\Http\Controllers\DashboardSeniRupaKomikStripController;
+use App\Http\Controllers\DashboardSeniRupaSeniLukisController;
+
+use App\Http\Controllers\DashboardSeniTariTariTradisionalController;
+use App\Http\Controllers\DashboardSeniTariTariModernController;
+
 use App\Http\Controllers\DashboardSeniMusikSoloVocalController;
 use App\Http\Controllers\DashboardSeniMusikMusicGroupController;
 
@@ -18,6 +24,12 @@ use App\Http\Controllers\DashboardSeniSastraMtqController;
 /**
  * LANDING CONTROLLER
  */
+use App\Http\Controllers\LandingSeniRupaKomikStripController;
+use App\Http\Controllers\LandingSeniRupaSeniLukisController;
+
+use App\Http\Controllers\LandingSeniTariTariTradisionalController;
+use App\Http\Controllers\LandingSeniTariTariModernController;
+
 use App\Http\Controllers\LandingSeniMusikSoloVocalController;
 use App\Http\Controllers\LandingSeniMusikMusicGroupController;
 
