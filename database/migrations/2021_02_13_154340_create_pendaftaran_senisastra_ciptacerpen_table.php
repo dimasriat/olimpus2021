@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePendaftaranSenisastraCiptacerpen extends Migration
+class CreatePendaftaranSenisastraCiptacerpenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,17 @@ class CreatePendaftaranSenisastraCiptacerpen extends Migration
     {
         Schema::create('pendaftaran_senisastra_ciptacerpen', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+			$table->string("email");
+			$table->string("fakultas");
+			
+			$table->string("no_wa_peserta");
+			$table->string("nama_peserta");
+			$table->string("nim_peserta");
+            
+			$table->string("foto_peserta")->default('');
+			$table->string("ktm_peserta")->default('');
+			
+			$table->boolean("konfirmasi")->default(false);
         });
     }
 
