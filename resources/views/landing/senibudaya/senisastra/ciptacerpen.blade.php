@@ -77,7 +77,7 @@
 						
 						<!-- FORM KTM / KRS PESERTA -->
 						<div class="form-group">
-							<label for="ktm_peserta">KTM / KRS Ketua Semester Peserta (Required):</label><br/>
+							<label for="ktm_peserta">KTM / KRS Semester Terakhir Peserta (Required):</label><br/>
 							<input id="ktm_peserta" type="file" name="ktm_peserta" value="{{ old('ktm_peserta') }}" class="form-control-file"/>
 						</div>
 						

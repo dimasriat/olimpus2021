@@ -17,7 +17,6 @@ class CreatePendaftaranSenitariTaritradisionalTable extends Migration
             $table->id();
 			$table->string("email");
 			$table->string("fakultas");
-			$table->string("judul_lagu");
 			
 			$table->string("nama_peserta_1");
 			$table->string("nim_peserta_1");

@@ -50,12 +50,6 @@
 							<label for="fakultas">Fakultas (required):</label><br/>
 							<input id="fakultas" type="text" name="fakultas" value="{{ old('fakultas') }}" class="form-control"/>
 						</div>
-
-						<!-- FORM JUDUL LAGU -->
-						<div class="form-group">
-							<label for="judul_lagu">Judul lagu (required):</label><br/>
-							<input id="judul_lagu" type="text" name="judul_lagu" value="{{ old('judul_lagu') }}" class="form-control"/>
-						</div>
 						
 						<!-- FORM NAMA LENGKAP PESERTA 1 -->
 						<div class="form-group">
