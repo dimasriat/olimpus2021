@@ -9,7 +9,7 @@ class LandingSeniSastraCiptaPuisiController extends Controller
 {
 	public $cabang_lomba = 'Cipta Puisi';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285113355202';
-	public $pamflet = 'img/senibudaya/senisastra/ciptapuisi/pamflet.png';
+	public $pamflet = 'img/senibudaya/senisastra/ciptapuisi69/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
 
 	public function index() {

@@ -51,7 +51,7 @@
 		<tr>
 			<td>{{ $row->id }}</td>
 			<td>
-				<form action="{{ route('pendaftaran.senimusik.musicgroup.update') }}" method="POST">
+				<form action="{{ route('pendaftaran.senitari.taritradisional.update') }}" method="POST">
 					@csrf
 					@method('put')
 					<input type="hidden" name="row_id" value="{{ $row->id }}" />
@@ -145,7 +145,7 @@
 		<tr>
 			<td>{{ $row->id }}</td>
 			<td>
-				<form action="{{ route('pendaftaran.senimusik.musicgroup.update') }}" method="POST">
+				<form action="{{ route('pendaftaran.senitari.taritradisional.update') }}" method="POST">
 					@csrf
 					@method('put')
 					<input type="hidden" name="row_id" value="{{ $row->id }}" />

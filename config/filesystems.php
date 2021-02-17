@@ -38,7 +38,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
         ],
 
@@ -50,13 +50,15 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
-		],
-		
-		'pendaftaran' => [
-			'driver' => 'local',
-			'root'   => public_path() . '/pendaftaran',
-			// 'root'   => public_path() . '/../../public_html/pendaftaran',
-		]
+        ],
+
+        'pendaftaran' => [
+            'driver' => 'local',
+            'root'   => (env('APP_DEBUG')
+                ? public_path() . '/pendaftaran'
+                : public_path() . '/../../public_html/pendaftaran'),
+            // 'root'   => public_path() . '/../../public_html/pendaftaran',
+        ]
 
     ],
 

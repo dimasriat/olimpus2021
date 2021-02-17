@@ -11,7 +11,7 @@ class LandingEsaiController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285156134515';
 	public $pamflet = 'img/keilmiahan/esai/pamflet.png';
 	public $guidebook = 'http://bit.ly/GuidebookEsaiOlimpus2021';
-	public $nominal = 'Rp20.000,00';
+	public $nominal = 'Rp25.000,00';
 
 	public function index() {
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);

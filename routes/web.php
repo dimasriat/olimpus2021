@@ -1,14 +1,19 @@
 <?php
 
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\LandingLktiController;
-use App\Http\Controllers\DashboardLktiController;
-use App\Http\Controllers\LandingDebatController;
-use App\Http\Controllers\DashboardDebatController;
-use App\Http\Controllers\LandingEsaiController;
-use App\Http\Controllers\DashboardEsaiController;
 
 use Illuminate\Support\Facades\Route;
+
+/**
+ * TESTING 
+ */
+Route::get('/test', function(){
+	if (env('APP_DEBUG')) {
+		return "yoiii bro";
+	} else {
+		return redirect()->route('landing.index');
+	}
+});
 
 /**
  * LANDING PAGE
