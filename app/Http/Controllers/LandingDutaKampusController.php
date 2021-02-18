@@ -9,7 +9,7 @@ class LandingDutaKampusController extends Controller
 {
 	public $cabang_lomba = 'Duta Kampus';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285790937450';
-	public $pamflet = 'img/apresiasi/dutakampus/pamflet.jpg';
+	public $pamflet = 'img/apresiasi/dutakampus/dutakampus.png';
 	public $guidebook = 'http://bit.ly/GuidebookDutKamUNS2021';
 	public $nominal = 'Rp50.000,00';
 
