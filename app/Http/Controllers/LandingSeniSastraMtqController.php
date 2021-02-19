@@ -11,9 +11,14 @@ class LandingSeniSastraMtqController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285290920050';
 	public $pamflet = 'img/senibudaya/senisastra/mtq/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
+	public $maintenance = true;
 
 	public function index() {
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+		
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+			
 		return view('landing.senibudaya.senisastra.mtq', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,

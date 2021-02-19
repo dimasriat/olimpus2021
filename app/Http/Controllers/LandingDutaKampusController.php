@@ -12,9 +12,15 @@ class LandingDutaKampusController extends Controller
 	public $pamflet = 'img/apresiasi/dutakampus/dutakampus.png';
 	public $guidebook = 'http://bit.ly/GuidebookDutKamUNS2021';
 	public $nominal = 'Rp50.000,00';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.apresiasi.dutakampus', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,

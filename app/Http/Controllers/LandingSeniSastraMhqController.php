@@ -11,9 +11,15 @@ class LandingSeniSastraMhqController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285786555521';
 	public $pamflet = 'img/senibudaya/senisastra/mhq/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.senibudaya.senisastra.mhq', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,
@@ -23,7 +29,8 @@ class LandingSeniSastraMhqController extends Controller
 		]);
 	}
 
-	public function store(Request $request) {
+	public function store(Request $request)
+	{
 		/**
 		 * Memvalidasi isi form agar sesuai dengan kriteria pendaftaran
 		 * apabila ada salah satu yang gagal, maka pendaftaran akan meminta ulang
@@ -37,14 +44,14 @@ class LandingSeniSastraMhqController extends Controller
 			"nim_peserta" => "required",
 			"foto_peserta" => "required|file|mimes:jpg,jpeg,png|max:2048",
 			"ktm_peserta" => "required|file|mimes:jpg,jpeg,png|max:2048",
-		]);		
+		]);
 
 		/**
 		 * Menyiapkan jenis input apa saja yang merupakan formulir
 		 * dalam bentuk file
 		 */
-		$ktm_peserta = $request->file('ktm_peserta');	
-		$foto_peserta = $request->file('foto_peserta');	
+		$ktm_peserta = $request->file('ktm_peserta');
+		$foto_peserta = $request->file('foto_peserta');
 
 
 		/**
@@ -59,7 +66,7 @@ class LandingSeniSastraMhqController extends Controller
 				'nama_peserta' => $request->input('nama_peserta'),
 				'nim_peserta' => $request->input('nim_peserta'),
 			]);
-		
+
 		/**
 		 * row_id udah dapet sekarang tinggal mindahin filenya ke folder public yang udah dibikin
 		 * dan akhirnya tinggal mengupdate isi tabelnya sesuai row_id yang udah didapat tadi
@@ -90,7 +97,8 @@ class LandingSeniSastraMhqController extends Controller
 		return redirect()->route('landing.senibudaya.senisastra.mhq.success')->with('status', 'SUKSES!');
 	}
 
-	public function success() {
+	public function success()
+	{
 		if (session('status')) {
 			$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
 			return view('landing.freesuccess', [

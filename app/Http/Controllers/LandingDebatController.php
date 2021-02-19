@@ -12,9 +12,15 @@ class LandingDebatController extends Controller
 	public $pamflet = 'img/keilmiahan/debat/pamflet.png';
 	public $guidebook = 'http://bit.ly/GuidebookDebatOlimpus21';
 	public $nominal = 'Rp30.000,00';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.keilmiahan.debat', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,

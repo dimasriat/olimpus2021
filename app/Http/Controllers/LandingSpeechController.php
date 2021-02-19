@@ -12,9 +12,15 @@ class LandingSpeechController extends Controller
 	public $pamflet = 'img/keilmiahan/lkti/pamflet.png';
 	public $guidebook = 'http://bit.ly/GuidebookLKTIOlimpus2021';
 	public $nominal = 'Rp694.646,00';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+
 		return view('landing.keilmiahan.speech', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,
@@ -24,8 +30,8 @@ class LandingSpeechController extends Controller
 		]);
 	}
 
-	public function store(Request $request) {
-		// return response()->json($request->input());
+	public function store(Request $request)
+	{
 		$request->validate([
 			"email" => "required",
 			"fakultas" => "required",
@@ -36,12 +42,12 @@ class LandingSpeechController extends Controller
 
 			"foto_peserta" => "required|file|mimes:jpg,jpeg,png|max:2048",
 			"ktm_peserta" => "required|file|mimes:jpg,jpeg,png|max:2048",
-			
+
 		]);
-		
+
 
 		// LOKASI PENYIMPANAN: img/pendaftar/keilmiahan/debat/
-		$ktm_peserta = $request->file('ktm_peserta'); 
+		$ktm_peserta = $request->file('ktm_peserta');
 		$foto_peserta = $request->file('foto_peserta');
 
 
@@ -58,7 +64,7 @@ class LandingSpeechController extends Controller
 				'nim_peserta' => $request->input('nim_peserta'),
 				'no_wa_peserta' => $request->input('no_wa_peserta'),
 			]);
-		
+
 		/**
 		 * row_id udah dapet sekarang tinggal mindahin filenya ke folder public yang udah dibikin
 		 * dan akhirnya tinggal mengupdate isi tabelnya sesuai row_id yang udah didapat tadi
@@ -89,14 +95,15 @@ class LandingSpeechController extends Controller
 		return redirect()->route('landing.keilmiahan.speech.success')->with('status', 'SUKSES!');
 	}
 
-	public function success() {
+	public function success()
+	{
 		if (session('status')) {
 			$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
 			return view('landing.success', [
 				'api' => $api,
 				'whatsapp' => $this->whatsapp,
 				'cabang_lomba' => $this->cabang_lomba,
-				'nominal' =>$this->nominal,
+				'nominal' => $this->nominal,
 			]);
 		} else {
 			return redirect()->route('landing.keilmiahan.speech.index');

@@ -11,9 +11,15 @@ class LandingSeniMusikMusicGroupController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6282218771367';
 	public $pamflet = 'img/senibudaya/senimusik/musicgroup/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1F0konfFnA_pZG0dIgFpQbCmEHjMopR0y?usp=sharing';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.senibudaya.senimusik.musicgroup', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,

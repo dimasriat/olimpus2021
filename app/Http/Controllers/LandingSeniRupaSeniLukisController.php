@@ -11,9 +11,15 @@ class LandingSeniRupaSeniLukisController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6289674641681';
 	public $pamflet = 'img/senibudaya/senirupa/senilukis/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/18asyv024_B3CEDkL_h5CK39UYpfjfC4v?usp=sharing';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.senibudaya.senirupa.senilukis', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,

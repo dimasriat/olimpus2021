@@ -11,9 +11,15 @@ class LandingSeniSastraCiptaPuisiController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285113355202';
 	public $pamflet = 'img/senibudaya/senisastra/ciptapuisi69/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
+	public $maintenance = true;
 
-	public function index() {
+	public function index()
+	{
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
+
+		if ($this->maintenance)
+			return view('landing.maintenance', ['api' => $api]);
+		
 		return view('landing.senibudaya.senisastra.ciptapuisi', [
 			'api' => $api,
 			'whatsapp' => $this->whatsapp,
