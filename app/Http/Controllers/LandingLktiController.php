@@ -13,6 +13,7 @@ class LandingLktiController extends Controller
 	public $guidebook = 'http://bit.ly/GuidebookLKTIOlimpus2021';
 	public $nominal = 'Rp35.000,00';
 	public $maintenance = false;
+	public $konfirmasi_bem = false;
 
 	public function index()
 	{
@@ -27,6 +28,7 @@ class LandingLktiController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

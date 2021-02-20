@@ -13,6 +13,7 @@ class LandingEsaiController extends Controller
 	public $guidebook = 'http://bit.ly/GuidebookEsaiOlimpus2021';
 	public $nominal = 'Rp25.000,00';
 	public $maintenance = false;
+	public $konfirmasi_bem = false;
 
 	public function index()
 	{
@@ -27,6 +28,7 @@ class LandingEsaiController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 
