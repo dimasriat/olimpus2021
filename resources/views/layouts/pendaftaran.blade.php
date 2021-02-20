@@ -18,7 +18,7 @@
 	<div class="h1 text-center font-weight-bold py-5">{{ $cabang_lomba }}</div>
 	<div class="row">
 		<div class="col-12 my-3">
-			<img src="{{ asset($pamflet) }}" class="img-fluid w-100 shadow" />
+			<img src="{{ asset($pamflet) }}" class="img-fluid w-100 shadow rounded" />
 		</div>
 		<div class="col col-lg my-3">
 			<a href="{{ asset($pamflet) }}" class="btn btn-primary w-100" download>Download Pamflet</a>
