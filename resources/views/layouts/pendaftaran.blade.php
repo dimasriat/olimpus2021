@@ -57,7 +57,7 @@
 					</p>
 					<p>Jika Anda belum melakukan konfirmasi, atau masih memiliki pertanyaan terkait aturan ini, Anda bisa menghubungi bagian humas kami dengan menekan tombol di bawah ini</p>
 					<p>
-						<button class="btn btn-success">Hubungi CP lewat Whatsapp (Anisa)</button>
+						<a href="https://api.whatsapp.com/send?phone=6289669942627" class="btn btn-success">Hubungi CP lewat Whatsapp (Anisa)</a>
 					</p>
 				</div>
 				<div class="card-body" id="maincontent" style="display: none;">
