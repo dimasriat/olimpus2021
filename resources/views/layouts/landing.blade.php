@@ -13,7 +13,7 @@
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
 		<a class="navbar-brand mr-auto" href="/">
 			<img src="{{ asset('img/logo-big.png') }}" style="height: 32px" />
-			<span class="mx-2 font-weight-bold"> Olimpus 2021</span>
+			<span class="mx-2 font-weight-bold"> Olimpus 2021 @yield('woi')</span>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
 			<span class="navbar-toggler-icon"></span>
@@ -64,5 +64,6 @@
 	</div>
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
 	<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+	@yield('landing-js')
 </body>
 </html>

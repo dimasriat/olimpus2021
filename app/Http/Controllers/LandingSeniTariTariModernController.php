@@ -11,7 +11,8 @@ class LandingSeniTariTariModernController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6289509786155';
 	public $pamflet = 'img/senibudaya/senitari/tarimodern/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1wKeEQEOk_3Wckus7sQ7Gss9L8JIiHMhY?usp=sharing';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index() {
 		$api = json_decode(file_get_contents(__DIR__ . "/../../../resources/api/api.json"), true);
@@ -25,6 +26,7 @@ class LandingSeniTariTariModernController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

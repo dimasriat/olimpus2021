@@ -11,7 +11,8 @@ class LandingSeniMusikSoloVocalController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=62895710695544';
 	public $pamflet = 'img/senibudaya/senimusik/solovocal/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1F0konfFnA_pZG0dIgFpQbCmEHjMopR0y?usp=sharing';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -26,6 +27,7 @@ class LandingSeniMusikSoloVocalController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

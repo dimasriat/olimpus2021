@@ -12,7 +12,8 @@ class LandingDutaKampusController extends Controller
 	public $pamflet = 'img/apresiasi/dutakampus/dutakampus.png';
 	public $guidebook = 'http://bit.ly/GuidebookDutKamUNS2021';
 	public $nominal = 'Rp50.000,00';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -27,6 +28,7 @@ class LandingDutaKampusController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

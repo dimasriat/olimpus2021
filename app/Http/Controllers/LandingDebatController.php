@@ -12,7 +12,8 @@ class LandingDebatController extends Controller
 	public $pamflet = 'img/keilmiahan/debat/pamflet.png';
 	public $guidebook = 'http://bit.ly/GuidebookDebatOlimpus21';
 	public $nominal = 'Rp30.000,00';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -27,6 +28,7 @@ class LandingDebatController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

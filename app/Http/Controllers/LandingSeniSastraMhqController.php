@@ -11,7 +11,8 @@ class LandingSeniSastraMhqController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285786555521';
 	public $pamflet = 'img/senibudaya/senisastra/mhq/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -26,6 +27,7 @@ class LandingSeniSastraMhqController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

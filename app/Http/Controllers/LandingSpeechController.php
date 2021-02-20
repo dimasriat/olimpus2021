@@ -13,6 +13,7 @@ class LandingSpeechController extends Controller
 	public $guidebook = 'http://bit.ly/GuidebookLKTIOlimpus2021';
 	public $nominal = 'Rp694.646,00';
 	public $maintenance = true;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -27,6 +28,7 @@ class LandingSpeechController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

@@ -11,7 +11,8 @@ class LandingSeniRupaKomikStripController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6287708513068';
 	public $pamflet = 'img/senibudaya/senirupa/komikstrip/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/18asyv024_B3CEDkL_h5CK39UYpfjfC4v?usp=sharing';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -26,6 +27,7 @@ class LandingSeniRupaKomikStripController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 

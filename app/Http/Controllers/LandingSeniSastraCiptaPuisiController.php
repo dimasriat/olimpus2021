@@ -11,7 +11,8 @@ class LandingSeniSastraCiptaPuisiController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285113355202';
 	public $pamflet = 'img/senibudaya/senisastra/ciptapuisi69/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
-	public $maintenance = true;
+	public $maintenance = false;
+	public $konfirmasi_bem = true;
 
 	public function index()
 	{
@@ -26,6 +27,7 @@ class LandingSeniSastraCiptaPuisiController extends Controller
 			'cabang_lomba' => $this->cabang_lomba,
 			'pamflet' => $this->pamflet,
 			'guidebook' => $this->guidebook,
+			'konfirmasi_bem' => $this->konfirmasi_bem,
 		]);
 	}
 
