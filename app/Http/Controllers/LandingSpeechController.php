@@ -9,7 +9,7 @@ class LandingSpeechController extends Controller
 {
 	public $cabang_lomba = 'Speech';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285803916415';
-	public $pamflet = 'img/keilmiahan/speech/pamflet.jpg';
+	public $pamflet = 'img/keilmiahan/speech/pamflet2.jpg';
 	public $guidebook = 'https://drive.google.com/folderview?id=1oQ2AAHmkyMhPVnohBaiWSRbB7-qe0CjP';
 	public $nominal = 'Rp30.000,00';
 	public $maintenance = false;
