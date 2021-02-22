@@ -46,7 +46,7 @@
 		</div>
 		@endif
 		<div class="w-100"></div>
-		@if ($konfirmasi_bem)
+		@if ($konfirmasi_bem && !$errors->any())
 		<div class="col-12 col-lg my-3">
 			<div class="card shadow h-100">
 				<div class="card-body text-center" id="warningcontent">

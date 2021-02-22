@@ -11,7 +11,7 @@ class LandingSeniTariTariTradisionalController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285640641995';
 	public $pamflet = 'img/senibudaya/senitari/taritradisional/pamflet.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1wKeEQEOk_3Wckus7sQ7Gss9L8JIiHMhY?usp=sharing';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index() {
@@ -37,30 +37,44 @@ class LandingSeniTariTariTradisionalController extends Controller
 		 * untuk memasukkan data yang valid
 		 */
 		$request->validate([
-			"email" => "required",
 			"fakultas" => "required",
-			"judul_lagu" => "required",
-			"nama_peserta_1" => "required",
-			"no_wa_peserta_1" => "required",
-			"nim_peserta_1" => "required",
-			"foto_peserta_1" => "required|file|mimes:jpg,jpeg,png|max:2048",
-			"ktm_peserta_1" => "required|file|mimes:jpg,jpeg,png|max:2048",
+			"judul_karya" => "required",
+			"nama_ketua" => "required",
+			"nim_ketua" => "required",
+			"ttl_ketua" => "required",
+			"alamat_ketua" => "required",
+			"no_wa_ketua" => "required",
+			"email_ketua" => "required",
+			"jurusan_angkatan_ketua" => "required",
+			"ktm_ketua" => "required|file|mimes:jpg,jpeg,png|max:2048",
+			"foto_ketua" => "required|file|mimes:jpg,jpeg,png|max:2048",
+			
+			"ktm_anggota_1" => "file|mimes:jpg,jpeg,png|max:2048",
+			"ktm_anggota_2" => "file|mimes:jpg,jpeg,png|max:2048",
+			"ktm_anggota_3" => "file|mimes:jpg,jpeg,png|max:2048",
+			"ktm_anggota_4" => "file|mimes:jpg,jpeg,png|max:2048",
+
+			"foto_anggota_1" => "file|mimes:jpg,jpeg,png|max:2048",
+			"foto_anggota_2" => "file|mimes:jpg,jpeg,png|max:2048",
+			"foto_anggota_3" => "file|mimes:jpg,jpeg,png|max:2048",
+			"foto_anggota_4" => "file|mimes:jpg,jpeg,png|max:2048",
 		]);		
 
 		/**
 		 * Menyiapkan jenis input apa saja yang merupakan formulir
 		 * dalam bentuk file
 		 */
-		$ktm_peserta_1 = $request->file('ktm_peserta_1');
-		$ktm_peserta_2 = $request->file('ktm_peserta_2');
-		$ktm_peserta_3 = $request->file('ktm_peserta_3');
-		$ktm_peserta_4 = $request->file('ktm_peserta_4');
-		$ktm_peserta_5 = $request->file('ktm_peserta_5');	
-		$foto_peserta_1 = $request->file('foto_peserta_1');	
-		$foto_peserta_2 = $request->file('foto_peserta_2');	
-		$foto_peserta_3 = $request->file('foto_peserta_3');	
-		$foto_peserta_4 = $request->file('foto_peserta_4');	
-		$foto_peserta_5 = $request->file('foto_peserta_5');	
+		$ktm_ketua = $request->file('ktm_ketua');
+		$ktm_anggota_1 = $request->file('ktm_anggota_1');
+		$ktm_anggota_2 = $request->file('ktm_anggota_2');
+		$ktm_anggota_3 = $request->file('ktm_anggota_3');
+		$ktm_anggota_4 = $request->file('ktm_anggota_4');
+		
+		$foto_ketua = $request->file('foto_ketua');
+		$foto_anggota_1 = $request->file('foto_anggota_1');
+		$foto_anggota_2 = $request->file('foto_anggota_2');
+		$foto_anggota_3 = $request->file('foto_anggota_3');
+		$foto_anggota_4 = $request->file('foto_anggota_4');
 
 		/**
 		 * Menambahkan data input text ke database biar dapet row_id nya biar bisa
@@ -68,29 +82,48 @@ class LandingSeniTariTariTradisionalController extends Controller
 		 */
 		$row_id = DB::table('pendaftaran_senitari_taritradisional')
 			->insertGetId([
-				'email' => $request->input('email'),
 				'fakultas' => $request->input('fakultas'),
-				'judul_lagu' => $request->input('judul_lagu'),
-
-				'nama_peserta_1' => $request->input('nama_peserta_1'),
-				'nim_peserta_1' => $request->input('nim_peserta_1'),
-				'no_wa_peserta_1' => $request->input('no_wa_peserta_1'),
+				'judul_karya' => $request->input('judul_karya'),
 				
-				'nama_peserta_2' => $request->input('nama_peserta_2'),
-				'nim_peserta_2' => $request->input('nim_peserta_2'),
-				'no_wa_peserta_2' => $request->input('no_wa_peserta_2'),
+				'nama_ketua' => $request->input('nama_ketua'),
+				'nim_ketua' => $request->input('nim_ketua'),
+				'ttl_ketua' => $request->input('ttl_ketua'),
+				'alamat_ketua' => $request->input('alamat_ketua'),
+				'no_wa_ketua' => $request->input('no_wa_ketua'),
+				'email_ketua' => $request->input('email_ketua'),
+				'jurusan_angkatan_ketua' => $request->input('jurusan_angkatan_ketua'),
 				
-				'nama_peserta_3' => $request->input('nama_peserta_3'),
-				'nim_peserta_3' => $request->input('nim_peserta_3'),
-				'no_wa_peserta_3' => $request->input('no_wa_peserta_3'),
+				'nama_anggota_1' => $request->input('nama_anggota_1'),
+				'nim_anggota_1' => $request->input('nim_anggota_1'),
+				'ttl_anggota_1' => $request->input('ttl_anggota_1'),
+				'alamat_anggota_1' => $request->input('alamat_anggota_1'),
+				'no_wa_anggota_1' => $request->input('no_wa_anggota_1'),
+				'email_anggota_1' => $request->input('email_anggota_1'),
+				'jurusan_angkatan_anggota_1' => $request->input('jurusan_angkatan_anggota_1'),
 				
-				'nama_peserta_4' => $request->input('nama_peserta_4'),
-				'nim_peserta_4' => $request->input('nim_peserta_4'),
-				'no_wa_peserta_4' => $request->input('no_wa_peserta_4'),
+				'nama_anggota_2' => $request->input('nama_anggota_2'),
+				'nim_anggota_2' => $request->input('nim_anggota_2'),
+				'ttl_anggota_2' => $request->input('ttl_anggota_2'),
+				'alamat_anggota_2' => $request->input('alamat_anggota_2'),
+				'no_wa_anggota_2' => $request->input('no_wa_anggota_2'),
+				'email_anggota_2' => $request->input('email_anggota_2'),
+				'jurusan_angkatan_anggota_2' => $request->input('jurusan_angkatan_anggota_2'),
 				
-				'nama_peserta_5' => $request->input('nama_peserta_5'),
-				'nim_peserta_5' => $request->input('nim_peserta_5'),
-				'no_wa_peserta_5' => $request->input('no_wa_peserta_5'),
+				'nama_anggota_3' => $request->input('nama_anggota_3'),
+				'nim_anggota_3' => $request->input('nim_anggota_3'),
+				'ttl_anggota_3' => $request->input('ttl_anggota_3'),
+				'alamat_anggota_3' => $request->input('alamat_anggota_3'),
+				'no_wa_anggota_3' => $request->input('no_wa_anggota_3'),
+				'email_anggota_3' => $request->input('email_anggota_3'),
+				'jurusan_angkatan_anggota_3' => $request->input('jurusan_angkatan_anggota_3'),
+				
+				'nama_anggota_4' => $request->input('nama_anggota_4'),
+				'nim_anggota_4' => $request->input('nim_anggota_4'),
+				'ttl_anggota_4' => $request->input('ttl_anggota_4'),
+				'alamat_anggota_4' => $request->input('alamat_anggota_4'),
+				'no_wa_anggota_4' => $request->input('no_wa_anggota_4'),
+				'email_anggota_4' => $request->input('email_anggota_4'),
+				'jurusan_angkatan_anggota_4' => $request->input('jurusan_angkatan_anggota_4'),
 			]);
 		
 		/**
@@ -102,18 +135,18 @@ class LandingSeniTariTariTradisionalController extends Controller
 		 */
 		$nama_file = [
 			'ktm' => [
-				'peserta_1' => $ktm_peserta_1 ? $ktm_peserta_1->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_2' => $ktm_peserta_2 ? $ktm_peserta_2->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_3' => $ktm_peserta_3 ? $ktm_peserta_3->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_4' => $ktm_peserta_4 ? $ktm_peserta_4->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_5' => $ktm_peserta_5 ? $ktm_peserta_5->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'ketua' => $ktm_ketua ? $ktm_ketua->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_1' => $ktm_anggota_1 ? $ktm_anggota_1->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_2' => $ktm_anggota_2 ? $ktm_anggota_2->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_3' => $ktm_anggota_3 ? $ktm_anggota_3->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_4' => $ktm_anggota_4 ? $ktm_anggota_4->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
 			],
 			'foto' => [
-				'peserta_1' => $foto_peserta_1 ? $foto_peserta_1->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_2' => $foto_peserta_2 ? $foto_peserta_2->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_3' => $foto_peserta_3 ? $foto_peserta_3->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_4' => $foto_peserta_4 ? $foto_peserta_4->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
-				'peserta_5' => $foto_peserta_5 ? $foto_peserta_5->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'ketua' => $foto_ketua ? $foto_ketua->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_1' => $foto_anggota_1 ? $foto_anggota_1->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_2' => $foto_anggota_2 ? $foto_anggota_2->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_3' => $foto_anggota_3 ? $foto_anggota_3->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
+				'anggota_4' => $foto_anggota_4 ? $foto_anggota_4->store('senibudaya/senitari/taritradisional/' . $row_id, ["disk" => 'pendaftaran']) : "",
 			],
 		];
 
@@ -124,16 +157,17 @@ class LandingSeniTariTariTradisionalController extends Controller
 		DB::table('pendaftaran_senitari_taritradisional')
 			->where('id', '=', $row_id)
 			->update([
-				'ktm_peserta_1' => $nama_file['ktm']['peserta_1'],
-				'ktm_peserta_2' => $nama_file['ktm']['peserta_2'],
-				'ktm_peserta_3' => $nama_file['ktm']['peserta_3'],
-				'ktm_peserta_4' => $nama_file['ktm']['peserta_4'],
-				'ktm_peserta_5' => $nama_file['ktm']['peserta_5'],
-				'foto_peserta_1' => $nama_file['foto']['peserta_1'],
-				'foto_peserta_2' => $nama_file['foto']['peserta_2'],
-				'foto_peserta_3' => $nama_file['foto']['peserta_3'],
-				'foto_peserta_4' => $nama_file['foto']['peserta_4'],
-				'foto_peserta_5' => $nama_file['foto']['peserta_5'],
+				'ktm_ketua' => $nama_file['ktm']['ketua'],
+				'ktm_anggota_1' => $nama_file['ktm']['anggota_1'],
+				'ktm_anggota_2' => $nama_file['ktm']['anggota_2'],
+				'ktm_anggota_3' => $nama_file['ktm']['anggota_3'],
+				'ktm_anggota_4' => $nama_file['ktm']['anggota_4'],
+				
+				'foto_ketua' => $nama_file['foto']['ketua'],
+				'foto_anggota_1' => $nama_file['foto']['anggota_1'],
+				'foto_anggota_2' => $nama_file['foto']['anggota_2'],
+				'foto_anggota_3' => $nama_file['foto']['anggota_3'],
+				'foto_anggota_4' => $nama_file['foto']['anggota_4'],
 			]);
 
 		return redirect()->route('landing.senibudaya.senitari.taritradisional.success')->with('status', 'SUKSES!');

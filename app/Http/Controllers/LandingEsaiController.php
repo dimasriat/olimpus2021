@@ -12,7 +12,7 @@ class LandingEsaiController extends Controller
 	public $pamflet = 'img/keilmiahan/esai/pamflet.png';
 	public $guidebook = 'http://bit.ly/GuidebookEsaiOlimpus2021';
 	public $nominal = 'Rp25.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = false;
 
 	public function index()
