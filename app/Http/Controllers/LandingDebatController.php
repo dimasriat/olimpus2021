@@ -9,7 +9,7 @@ class LandingDebatController extends Controller
 {
 	public $cabang_lomba = 'Debat';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285713757204';
-	public $pamflet = 'img/keilmiahan/debat/pamflet.png';
+	public $pamflet = 'img/keilmiahan/debat/pamflet.jpg';
 	public $guidebook = 'http://bit.ly/GuidebookDebatOlimpus21';
 	public $nominal = 'Rp30.000,00';
 	public $maintenance = false;
