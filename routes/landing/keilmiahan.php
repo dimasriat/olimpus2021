@@ -56,8 +56,8 @@ Route::get('/dashboard/pendaftaran/speech', [DashboardSpeechController::class, '
 Route::put('/dashboard/pendaftaran/speech', [DashboardSpeechController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.speech.update');
 
-Route::get('/keilmiahan/poster', [LandingMaintenanceController::class, "index"])
-	->name('landing.keilmiahan.poster.index');
+Route::get('/keilmiahan/infografis', [LandingMaintenanceController::class, "index"])
+	->name('landing.keilmiahan.infografis.index');
 
 /*	
 Route::get('/keilmiahan/speech', [LandingMaintenanceController::class, "index"])

@@ -35,7 +35,7 @@
 			<div class="col-12 col-lg my-3">
 				<div class="card shadow h-100">
 					<div class="card-body">
-						<p class="text-center font-weight-bold h3">🏀 Olahraga</p>
+						<p class="text-center font-weight-bold h3">⚔️ Olahraga</p>
 						<a href="{{ route('landing.olahraga.index') }}" class="btn btn-primary mt-3 w-100">Lihat</a>
 					</div>
 				</div>

@@ -2,7 +2,7 @@
 
 @section("content")
 <x-container class="py-5"  style="min-height: 480px; background-image: url('{{ asset('img/bg.jpg') }}'); background-size: cover; background-attachment: fixed; background-position: center;">
-	<div class="h1 text-center font-weight-bold py-5 text-white">🏀 Olahraga</div>
+	<div class="h1 text-center font-weight-bold py-5 text-white">⚔️ Olahraga</div>
 	<div class="row justify-content-center">
 		<div class="col-lg-4 col-12 my-3">
 			<div class="card shadow h-100">
@@ -15,24 +15,8 @@
 		<div class="col-lg-4 col-12 my-3">
 			<div class="card shadow h-100">
 				<div class="card-body">
-					<p class="text-center font-weight-bold h3 text-primary">Mobile Legend</p>
-					<a href="{{ route('landing.olahraga.mlbb.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-12 my-3">
-			<div class="card shadow h-100">
-				<div class="card-body">
-					<p class="text-center font-weight-bold h3 text-primary">PUBG</p>
-					<a href="{{ route('landing.olahraga.pubg.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-12 my-3">
-			<div class="card shadow h-100">
-				<div class="card-body">
-					<p class="text-center font-weight-bold h3 text-primary">Dota 2</p>
-					<a href="{{ route('landing.olahraga.dota2.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
+					<p class="text-center font-weight-bold h3 text-primary">E-Sports</p>
+					<a href="{{ route('landing.olahraga.esports.index') }}" class="btn btn-primary mt-3 w-100">Daftarkan Dirimu!</a>
 				</div>
 			</div>
 		</div>
