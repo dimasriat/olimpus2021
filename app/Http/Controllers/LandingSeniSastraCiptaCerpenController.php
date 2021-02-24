@@ -9,7 +9,7 @@ class LandingSeniSastraCiptaCerpenController extends Controller
 {
 	public $cabang_lomba = 'Cipta Cerpen';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6282242228330';
-	public $pamflet = 'img/senibudaya/senisastra/ciptacerpen/pamflet.png';
+	public $pamflet = 'img/senibudaya/senisastra/ciptacerpen/pamflet_revisi.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;

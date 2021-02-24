@@ -9,7 +9,7 @@ class LandingSeniSastraMhqController extends Controller
 {
 	public $cabang_lomba = 'Musabaqah Hifdzil Quran';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285786555521';
-	public $pamflet = 'img/senibudaya/senisastra/mhq/pamflet.png';
+	public $pamflet = 'img/senibudaya/senisastra/mhq/pamflet_revisi.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;

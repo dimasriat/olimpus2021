@@ -9,7 +9,7 @@ class LandingSeniRupaSeniLukisController extends Controller
 {
 	public $cabang_lomba = 'Seni Lukis';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6289674641681';
-	public $pamflet = 'img/senibudaya/senirupa/senilukis/pamflet.png';
+	public $pamflet = 'img/senibudaya/senirupa/senilukis/pamflet_revisi.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/18asyv024_B3CEDkL_h5CK39UYpfjfC4v?usp=sharing';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;
