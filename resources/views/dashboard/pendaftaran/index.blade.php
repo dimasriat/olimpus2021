@@ -7,6 +7,7 @@
 	<p><a href="{{ route('pendaftaran.debat.index') }}">Debat</a></p>
 	<p><a href="{{ route('pendaftaran.esai.index') }}">Esai</a></p>
 	<p><a href="{{ route('pendaftaran.speech.index') }}">Speech</a></p>
+	<p><a href="{{ route('pendaftaran.poster.index') }}">Poster</a></p>
 	<h3>Seni Rupa</h3>
 	<p><a href="{{ route('pendaftaran.senirupa.komikstrip.index') }}">Komik Strip</a></p>
 	<p><a href="{{ route('pendaftaran.senirupa.senilukis.index') }}">Seni Lukis</a></p>
