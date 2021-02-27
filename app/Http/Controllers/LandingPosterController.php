@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\DB;
 class LandingPosterController extends Controller
 {
 	public $cabang_lomba = 'Poster';
-	public $whatsapp = '';
-	public $pamflet = '';
-	public $guidebook = '';
-	public $nominal = '';
+	public $whatsapp = 'https://api.whatsapp.com/send?phone=628128739571';
+	public $pamflet = 'img/keilmiahan/poster/pamflet.jpg';
+	public $guidebook = 'http://bit.ly/PosterOlimpus2021';
+	public $nominal = 'Rp15.000,00';
 	public $maintenance = false;
 	public $konfirmasi_bem = false;
 
