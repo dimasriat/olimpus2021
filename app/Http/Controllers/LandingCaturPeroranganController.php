@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\DB;
 class LandingCaturPeroranganController extends Controller
 {
 	public $cabang_lomba = 'Catur Perorangan';
-	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285803916415';
-	public $pamflet = 'img/olahraga/catur/perorangan/pamflet.jpeg';
-	public $guidebook = 'https://drive.google.com/folderview?id=1oQ2AAHmkyMhPVnohBaiWSRbB7-qe0CjP';
-	public $nominal = 'Rp10.000,00';
+	public $whatsapp = 'https://api.whatsapp.com/send?phone=6282223724415';
+	public $pamflet = 'img/olahraga/catur/perorangan/pamflet.png';
+	public $guidebook = 'https://bit.ly/CaturOlimpus2021';
+	public $nominal = 'Rp25.000,00';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;
 

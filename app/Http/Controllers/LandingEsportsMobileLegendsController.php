@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\DB;
 class LandingEsportsMobileLegendsController extends Controller
 {
 	public $cabang_lomba = 'Mobile Legends';
-	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285803916415';
-	public $pamflet = 'img/olahraga/esports/mobilelegends/pamflet.jpeg';
-	public $guidebook = 'https://drive.google.com/folderview?id=1oQ2AAHmkyMhPVnohBaiWSRbB7-qe0CjP';
+	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285867516142';
+	public $pamflet = 'img/olahraga/esports/mobilelegends/pamflet.jpg';
+	public $guidebook = 'https://drive.google.com/drive/folders/1EKn38Yw8vPnKOgF5WYB1ZPKLVt_OXeEj?usp=sharing';
 	public $nominal = 'Rp10.000,00';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;

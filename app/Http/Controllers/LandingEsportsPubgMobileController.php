@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\DB;
 class LandingEsportsPubgMobileController extends Controller
 {
 	public $cabang_lomba = 'PUBG Mobile';
-	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285803916415';
-	public $pamflet = 'img/olahraga/esports/pubgmobile/pamflet.jpeg';
-	public $guidebook = 'https://drive.google.com/folderview?id=1oQ2AAHmkyMhPVnohBaiWSRbB7-qe0CjP';
+	public $whatsapp = 'https://api.whatsapp.com/send?phone=6282146947055';
+	public $pamflet = 'img/olahraga/esports/pubgmobile/pamflet.jpg';
+	public $guidebook = 'https://drive.google.com/drive/folders/1EKn38Yw8vPnKOgF5WYB1ZPKLVt_OXeEj?usp=sharing';
 	public $nominal = 'Rp10.000,00';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;
