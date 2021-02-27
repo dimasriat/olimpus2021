@@ -9,11 +9,48 @@ use App\Http\Controllers\LandingEsportsDota2Controller;
 use App\Http\Controllers\DashboardEsportsMobileLegendsController;
 use App\Http\Controllers\LandingEsportsMobileLegendsController;
 
+use App\Http\Controllers\LandingCaturBereguController;
+use App\Http\Controllers\DashboardCaturBereguController;
+use App\Http\Controllers\LandingCaturPeroranganController;
+use App\Http\Controllers\DashboardCaturPeroranganController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingMaintenanceController;
 
-Route::get('/olahraga/catur', [LandingMaintenanceController::class, "index"])
-	->name('landing.olahraga.catur.index');
+/**
+ * CATUR
+ * - PERORANGAN
+ * - BEREGU
+ */
+Route::get('/olahraga/catur', function () {
+	$api = json_decode(file_get_contents(__DIR__ . "/../../resources/api/api.json"), true);
+	return view('landing.olahraga.catur.index', ['api' => $api]);
+})->name('landing.olahraga.catur.index');
+
+/** PERORANGAN */
+Route::get('/olahraga/catur/perorangan', [LandingCaturPeroranganController::class, "index"])
+	->name('landing.olahraga.catur.perorangan.index');
+Route::post('/olahraga/catur/perorangan', [LandingCaturPeroranganController::class, "store"])
+	->name('landing.olahraga.catur.perorangan.store');
+Route::get('/olahraga/catur/perorangan/success', [LandingCaturPeroranganController::class, "success"])
+	->name('landing.olahraga.catur.perorangan.success');
+Route::get('/dashboard/pendaftaran/catur/perorangan', [DashboardCaturPeroranganController::class, 'index'])
+	->middleware(['auth'])->name('pendaftaran.catur.perorangan.index');
+Route::put('/dashboard/pendaftaran/catur/perorangan', [DashboardCaturPeroranganController::class, 'update'])
+	->middleware(['auth'])->name('pendaftaran.catur.perorangan.update');
+
+/** BEREGU */
+Route::get('/olahraga/catur/beregu', [LandingCaturBereguController::class, "index"])
+        ->name('landing.olahraga.catur.beregu.index');
+Route::post('/olahraga/catur/beregu', [LandingCaturBereguController::class, "store"])
+        ->name('landing.olahraga.catur.beregu.store');
+Route::get('/olahraga/catur/beregu/success', [LandingCaturBereguController::class, "success"])
+        ->name('landing.olahraga.catur.beregu.success');
+Route::get('/dashboard/pendaftaran/catur/beregu', [DashboardCaturBereguController::class, 'index'])
+        ->middleware(['auth'])->name('pendaftaran.catur.beregu.index');
+Route::put('/dashboard/pendaftaran/catur/beregu', [DashboardCaturBereguController::class, 'update'])
+        ->middleware(['auth'])->name('pendaftaran.catur.beregu.update');
+
 
 /**
  * ESPORTS
