@@ -1,7 +1,7 @@
 @extends("layouts.pendaftaran")
 
 @section("form-pendaftaran")
-<form method="POST" action="{{ route('landing.olahraga.esports.dota2.store') }}" enctype="multipart/form-data">
+<form method="POST" action="{{ route('landing.olahraga.esports.pointblank.store') }}" enctype="multipart/form-data">
 	@csrf
 	<div class="form-group">
 		<label for="fakultas">Fakultas</label><br />

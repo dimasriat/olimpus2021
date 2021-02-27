@@ -2,6 +2,11 @@
 
 @section("content")
 	<h2>Pendaftaran</h2>
+	<h3>Esports</h3>
+	<p><a href="{{ route('pendaftaran.esports.pubgmobile.index') }}">PUBG</a></p>
+	<p><a href="{{ route('pendaftaran.esports.mobilelegends.index') }}">ML</a></p>
+	<p><a href="{{ route('pendaftaran.esports.pointblank.index') }}">PB</a></p>
+	<p><a href="{{ route('pendaftaran.esports.dota2.index') }}">DOTA</a></p>
 	<h3>Keilmiahan</h3>
 	<p><a href="{{ route('pendaftaran.lkti.index') }}">LKTI</a></p>
 	<p><a href="{{ route('pendaftaran.debat.index') }}">Debat</a></p>
