@@ -13,7 +13,7 @@ class LandingCaturPeroranganController extends Controller
 	public $guidebook = 'https://bit.ly/CaturOlimpus2021';
 	public $nominal = 'Rp25.000,00';
 	public $maintenance = false;
-	public $konfirmasi_bem = true;
+	public $konfirmasi_bem = false;
 
 	public function index()
 	{
@@ -37,6 +37,8 @@ class LandingCaturPeroranganController extends Controller
 		$request->validate([
 			"fakultas" => "required",
 			"email" => "required",
+			
+			"id_lichess_peserta" => "required",
 
 			"nama_peserta" => "required",
 			"nim_jurusan_peserta" => "required",
@@ -60,6 +62,8 @@ class LandingCaturPeroranganController extends Controller
 			->insertGetId([
 				'fakultas' => $request->input('fakultas'),
 				'email' => $request->input('email'),
+
+				'id_lichess_peserta' => $request->input('id_lichess_peserta'),
 
 				'nama_peserta' => $request->input('nama_peserta'),
 				'nim_jurusan_peserta' => $request->input('nim_jurusan_peserta'),

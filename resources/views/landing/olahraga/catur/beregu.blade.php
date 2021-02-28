@@ -12,6 +12,10 @@
 		<input id="fakultas" type="text" name="fakultas" value="{{ old('fakultas') }}" class="form-control" />
 	</div>
 	<div class="form-group">
+		<label for="id_lichess_tim">Id Lichess Tim</label><br />
+		<input id="id_lichess_tim" type="text" name="id_lichess_tim" value="{{ old('id_lichess_tim') }}" class="form-control" />
+	</div>
+	<div class="form-group">
 		<label for="nama_ketua">Nama Ketua</label><br />
 		<input id="nama_ketua" type="text" name="nama_ketua" value="{{ old('nama_ketua') }}" class="form-control" />
 	</div>
@@ -22,6 +26,10 @@
 	<div class="form-group">
 		<label for="no_wa_ketua">No Wa Ketua</label><br />
 		<input id="no_wa_ketua" type="text" name="no_wa_ketua" value="{{ old('no_wa_ketua') }}" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="id_lichess_ketua">Id Lichess Ketua</label><br />
+		<input id="id_lichess_ketua" type="text" name="id_lichess_ketua" value="{{ old('id_lichess_ketua') }}" class="form-control" />
 	</div>
 	<div class="form-group">
 		<label for="ktm_ketua">Ktm Ketua</label><br />
@@ -44,6 +52,10 @@
 		<input id="no_wa_anggota_1" type="text" name="no_wa_anggota_1" value="{{ old('no_wa_anggota_1') }}" class="form-control" />
 	</div>
 	<div class="form-group">
+		<label for="id_lichess_anggota_1">Id Lichess Anggota 1</label><br />
+		<input id="id_lichess_anggota_1" type="text" name="id_lichess_anggota_1" value="{{ old('id_lichess_anggota_1') }}" class="form-control" />
+	</div>
+	<div class="form-group">
 		<label for="ktm_anggota_1">Ktm Anggota 1</label><br />
 		<input id="ktm_anggota_1" type="file" name="ktm_anggota_1" value="{{ old('ktm_anggota_1') }}" class="form-control-file" />
 	</div>
@@ -64,6 +76,10 @@
 		<input id="no_wa_anggota_2" type="text" name="no_wa_anggota_2" value="{{ old('no_wa_anggota_2') }}" class="form-control" />
 	</div>
 	<div class="form-group">
+		<label for="id_lichess_anggota_2">Id Lichess Anggota 2</label><br />
+		<input id="id_lichess_anggota_2" type="text" name="id_lichess_anggota_2" value="{{ old('id_lichess_anggota_2') }}" class="form-control" />
+	</div>
+	<div class="form-group">
 		<label for="ktm_anggota_2">Ktm Anggota 2</label><br />
 		<input id="ktm_anggota_2" type="file" name="ktm_anggota_2" value="{{ old('ktm_anggota_2') }}" class="form-control-file" />
 	</div>
@@ -82,6 +98,10 @@
 	<div class="form-group">
 		<label for="no_wa_anggota_3">No Wa Anggota 3</label><br />
 		<input id="no_wa_anggota_3" type="text" name="no_wa_anggota_3" value="{{ old('no_wa_anggota_3') }}" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="id_lichess_anggota_3">Id Lichess Anggota 3</label><br />
+		<input id="id_lichess_anggota_3" type="text" name="id_lichess_anggota_3" value="{{ old('id_lichess_anggota_3') }}" class="form-control" />
 	</div>
 	<div class="form-group">
 		<label for="ktm_anggota_3">Ktm Anggota 3</label><br />

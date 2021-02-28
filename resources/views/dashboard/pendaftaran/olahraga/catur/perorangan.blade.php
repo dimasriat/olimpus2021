@@ -16,6 +16,7 @@
 		<th>Nama Peserta</th>
 		<th>Nim Jurusan Peserta</th>
 		<th>No Wa Peserta</th>
+		<th>Id Lichess Peserta</th>
 		<th>Ktm Peserta</th>
 		<th>Foto Peserta</th>
 
@@ -39,6 +40,7 @@
 		<td>{{ $row->nama_peserta }}</td>
 		<td>{{ $row->nim_jurusan_peserta }}</td>
 		<td>{{ $row->no_wa_peserta }}</td>
+		<td>{{ $row->id_lichess_peserta }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_peserta) }}" />
 		</td>
@@ -65,6 +67,7 @@
 		<th>Nama Peserta</th>
 		<th>Nim Jurusan Peserta</th>
 		<th>No Wa Peserta</th>
+		<th>Id Lichess Peserta</th>
 		<th>Ktm Peserta</th>
 		<th>Foto Peserta</th>
 
@@ -88,6 +91,7 @@
 		<td>{{ $row->nama_peserta }}</td>
 		<td>{{ $row->nim_jurusan_peserta }}</td>
 		<td>{{ $row->no_wa_peserta }}</td>
+		<td>{{ $row->id_lichess_peserta }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_peserta) }}" />
 		</td>

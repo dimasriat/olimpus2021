@@ -21,7 +21,8 @@ class CreatePendaftaranCaturPeroranganTable extends Migration
 			$table->string("no_wa_peserta");
 			$table->string("nama_peserta");
 			$table->string("nim_jurusan_peserta");
-            
+            $table->string("id_lichess_peserta");
+			
 			$table->string("foto_peserta")->default('');
 			$table->string("ktm_peserta")->default('');
 			

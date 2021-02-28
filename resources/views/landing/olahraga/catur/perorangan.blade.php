@@ -12,6 +12,10 @@
 		<input id="fakultas" type="text" name="fakultas" value="{{ old('fakultas') }}" class="form-control" />
 	</div>
 	<div class="form-group">
+		<label for="id_lichess_peserta">Id Lichess Peserta</label><br />
+		<input id="id_lichess_peserta" type="text" name="id_lichess_peserta" value="{{ old('id_lichess_peserta') }}" class="form-control" />
+	</div>
+	<div class="form-group">
 		<label for="nama_peserta">Nama Peserta</label><br />
 		<input id="nama_peserta" type="text" name="nama_peserta" value="{{ old('nama_peserta') }}" class="form-control" />
 	</div>

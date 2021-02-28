@@ -13,24 +13,33 @@
 		<th>Action</th>
 		<th>Email</th>
 		<th>Fakultas</th>
+		<th>Id Lichess Tim</th>
+
 		<th>Nama Ketua</th>
 		<th>Nim Jurusan Ketua</th>
 		<th>No Wa Ketua</th>
+		<th>Id Lichess Ketua</th>
 		<th>Ktm Ketua</th>
 		<th>Foto Ketua</th>
+		
 		<th>Nama Anggota 1</th>
 		<th>Nim Jurusan Anggota 1</th>
 		<th>No Wa Anggota 1</th>
+		<th>Id Lichess Anggota 1</th>
 		<th>Ktm Anggota 1</th>
 		<th>Foto Anggota 1</th>
+
 		<th>Nama Anggota 2</th>
 		<th>Nim Jurusan Anggota 2</th>
 		<th>No Wa Anggota 2</th>
+		<th>Id Lichess Anggota 2</th>
 		<th>Ktm Anggota 2</th>
 		<th>Foto Anggota 2</th>
+
 		<th>Nama Anggota 3</th>
 		<th>Nim Jurusan Anggota 3</th>
 		<th>No Wa Anggota 3</th>
+		<th>Id Lichess Anggota 3</th>
 		<th>Ktm Anggota 3</th>
 		<th>Foto Anggota 3</th>
 
@@ -51,36 +60,45 @@
 		</td>
 		<td>{{ $row->email }}</td>
 		<td>{{ $row->fakultas }}</td>
+		<td>{{ $row->id_lichess_tim }}</td>
+
 		<td>{{ $row->nama_ketua }}</td>
 		<td>{{ $row->nim_jurusan_ketua }}</td>
 		<td>{{ $row->no_wa_ketua }}</td>
+		<td>{{ $row->id_lichess_ketua }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}" />
 		</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->foto_ketua) }}" />
 		</td>
+
 		<td>{{ $row->nama_anggota_1 }}</td>
 		<td>{{ $row->nim_jurusan_anggota_1 }}</td>
 		<td>{{ $row->no_wa_anggota_1 }}</td>
+		<td>{{ $row->id_lichess_anggota_1 }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota_1) }}" />
 		</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->foto_anggota_1) }}" />
 		</td>
+
 		<td>{{ $row->nama_anggota_2 }}</td>
 		<td>{{ $row->nim_jurusan_anggota_2 }}</td>
 		<td>{{ $row->no_wa_anggota_2 }}</td>
+		<td>{{ $row->id_lichess_anggota_2 }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota_2) }}" />
 		</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->foto_anggota_2) }}" />
 		</td>
+
 		<td>{{ $row->nama_anggota_3 }}</td>
 		<td>{{ $row->nim_jurusan_anggota_3 }}</td>
 		<td>{{ $row->no_wa_anggota_3 }}</td>
+		<td>{{ $row->id_lichess_anggota_3 }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota_3) }}" />
 		</td>
@@ -104,27 +122,35 @@
 		<th>Action</th>
 		<th>Email</th>
 		<th>Fakultas</th>
+		<th>Id Lichess Tim</th>
+		
 		<th>Nama Ketua</th>
 		<th>Nim Jurusan Ketua</th>
 		<th>No Wa Ketua</th>
+		<th>Id Lichess Ketua</th>
 		<th>Ktm Ketua</th>
 		<th>Foto Ketua</th>
+		
 		<th>Nama Anggota 1</th>
 		<th>Nim Jurusan Anggota 1</th>
 		<th>No Wa Anggota 1</th>
+		<th>Id Lichess Anggota 1</th>
 		<th>Ktm Anggota 1</th>
 		<th>Foto Anggota 1</th>
+
 		<th>Nama Anggota 2</th>
 		<th>Nim Jurusan Anggota 2</th>
 		<th>No Wa Anggota 2</th>
+		<th>Id Lichess Anggota 2</th>
 		<th>Ktm Anggota 2</th>
 		<th>Foto Anggota 2</th>
+
 		<th>Nama Anggota 3</th>
 		<th>Nim Jurusan Anggota 3</th>
 		<th>No Wa Anggota 3</th>
+		<th>Id Lichess Anggota 3</th>
 		<th>Ktm Anggota 3</th>
 		<th>Foto Anggota 3</th>
-
 	</tr>
 
 	<!-- TABLE BODY -->
@@ -142,36 +168,45 @@
 		</td>
 		<td>{{ $row->email }}</td>
 		<td>{{ $row->fakultas }}</td>
+		<td>{{ $row->id_lichess_tim }}</td>
+
 		<td>{{ $row->nama_ketua }}</td>
 		<td>{{ $row->nim_jurusan_ketua }}</td>
 		<td>{{ $row->no_wa_ketua }}</td>
+		<td>{{ $row->id_lichess_ketua }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_ketua) }}" />
 		</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->foto_ketua) }}" />
 		</td>
+
 		<td>{{ $row->nama_anggota_1 }}</td>
 		<td>{{ $row->nim_jurusan_anggota_1 }}</td>
 		<td>{{ $row->no_wa_anggota_1 }}</td>
+		<td>{{ $row->id_lichess_anggota_1 }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota_1) }}" />
 		</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->foto_anggota_1) }}" />
 		</td>
+
 		<td>{{ $row->nama_anggota_2 }}</td>
 		<td>{{ $row->nim_jurusan_anggota_2 }}</td>
 		<td>{{ $row->no_wa_anggota_2 }}</td>
+		<td>{{ $row->id_lichess_anggota_2 }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota_2) }}" />
 		</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->foto_anggota_2) }}" />
 		</td>
+
 		<td>{{ $row->nama_anggota_3 }}</td>
 		<td>{{ $row->nim_jurusan_anggota_3 }}</td>
 		<td>{{ $row->no_wa_anggota_3 }}</td>
+		<td>{{ $row->id_lichess_anggota_3 }}</td>
 		<td>
 			<x-image-link src="{{ asset('pendaftaran/' . $row->ktm_anggota_3) }}" />
 		</td>

@@ -13,7 +13,7 @@ class LandingCaturBereguController extends Controller
 	public $guidebook = 'https://bit.ly/CaturOlimpus2021';
 	public $nominal = 'Rp50.000,00';
 	public $maintenance = false;
-	public $konfirmasi_bem = true;
+	public $konfirmasi_bem = false;
 
 	public function index()
 	{
@@ -62,6 +62,13 @@ class LandingCaturBereguController extends Controller
 			"ktm_anggota_3" => "required|file|mimes:jpg,jpeg,png|max:2048",
 			"foto_anggota_3" => "required|file|mimes:jpg,jpeg,png|max:2048",
 
+			
+			"id_lichess_tim" => "required",
+			"id_lichess_ketua" => "required",
+			"id_lichess_anggota_1" => "required",
+			"id_lichess_anggota_2" => "required",
+			"id_lichess_anggota_3" => "required",
+
 		]);
 
 
@@ -100,6 +107,13 @@ class LandingCaturBereguController extends Controller
 				'nama_anggota_3' => $request->input('nama_anggota_3'),
 				'nim_jurusan_anggota_3' => $request->input('nim_jurusan_anggota_3'),
 				'no_wa_anggota_3' => $request->input('no_wa_anggota_3'),
+
+				
+				'id_lichess_tim' => $request->input('id_lichess_tim'),
+				'id_lichess_ketua' => $request->input('id_lichess_ketua'),
+				'id_lichess_anggota_1' => $request->input('id_lichess_anggota_1'),
+				'id_lichess_anggota_2' => $request->input('id_lichess_anggota_2'),
+				'id_lichess_anggota_3' => $request->input('id_lichess_anggota_3'),
 
 			]);
 
