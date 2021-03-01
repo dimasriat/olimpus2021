@@ -12,7 +12,7 @@
 		<input id="fakultas" type="text" name="fakultas" value="{{ old('fakultas') }}" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="id_lichess_tim">Id Lichess Tim</label><br />
+		<label for="id_lichess_tim">Link Lichess Tim</label><br />
 		<input id="id_lichess_tim" type="text" name="id_lichess_tim" value="{{ old('id_lichess_tim') }}" class="form-control" />
 	</div>
 	<div class="form-group">
