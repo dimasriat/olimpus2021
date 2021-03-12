@@ -12,7 +12,7 @@ class LandingLktiController extends Controller
 	public $pamflet = 'img/keilmiahan/lkti/pamflet.png';
 	public $guidebook = 'http://bit.ly/GuidebookLKTIOlimpus2021';
 	public $nominal = 'Rp35.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = false;
 
 	public function index()
