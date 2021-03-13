@@ -9,7 +9,7 @@ class LandingSeniMusikSoloVocalController extends Controller
 {
 	public $cabang_lomba = 'Solo Vocal';
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=62895710695544';
-	public $pamflet = 'img/senibudaya/senimusik/solovocal/pamflet_revisi.png';
+	public $pamflet = 'img/senibudaya/senimusik/solovocal/pamflet_revisi2.jpeg';
 	public $guidebook = 'https://drive.google.com/folderview?id=1OEDh-baIaP_OL3K3NTJu4cn_LMt_XhRy';
 	public $maintenance = false;
 	public $konfirmasi_bem = true;
