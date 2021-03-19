@@ -18,10 +18,10 @@
 		</header>
 		<div id="maps-container">
 			<div id="btn-container">
-				<a href="{{ route('maps.closing') }}" class="btn-maps" id="closing-btn">Closing Ceremony</a>
-				<a href="{{ route('maps.lomba') }}" class="btn-maps" id="lomba-btn">Lomba Bidang</a>
-				<a href="{{ route('maps.artech') }}" class="btn-maps" id="artech-btn">Art and Technology Paradise</a>
-				<a href="{{ route('maps.opening') }}" class="btn-maps" id="opening-btn">Opening Ceremony</a>
+				<a target="_blank" href="{{ route('maps.closing') }}" class="btn-maps" id="closing-btn">Closing Ceremony</a>
+				<a target="_blank" href="{{ route('maps.lomba') }}" class="btn-maps" id="lomba-btn">Lomba Bidang</a>
+				<a target="_blank" href="{{ route('maps.artech') }}" class="btn-maps" id="artech-btn">Art and Technology Paradise</a>
+				<a target="_blank" href="{{ route('maps.opening') }}" class="btn-maps" id="opening-btn">Opening Ceremony</a>
 			</div>
 			<img src="{{ asset('img/maps2/full.jpg') }}" />
 		</div>
@@ -36,7 +36,7 @@
 						Opening Ceremony
 					</div>
 					<div class="mobile-btn-control">
-						<a href="{{ route('maps.opening') }}" id="opening-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
+						<a target="_blank" href="{{ route('maps.opening') }}" id="opening-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
 					</div>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 						Art and Technology Paradise
 					</div>
 					<div class="mobile-btn-control">
-						<a href="{{ route('maps.artech') }}" id="artech-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
+						<a target="_blank" href="{{ route('maps.artech') }}" id="artech-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						Lomba Bidang
 					</div>
 					<div class="mobile-btn-control">
-						<a href="{{ route('maps.lomba') }}" id="lomba-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
+						<a target="_blank" href="{{ route('maps.lomba') }}" id="lomba-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
 					</div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 						Closing Ceremony
 					</div>
 					<div class="mobile-btn-control">
-						<a href="{{ route('maps.closing') }}" id="closing-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
+						<a target="_blank" href="{{ route('maps.closing') }}" id="closing-mobile-btn" class="mobile-btn-maps">Enter Stage</a>
 					</div>
 				</div>
 			</div>
