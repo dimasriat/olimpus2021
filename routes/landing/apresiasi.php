@@ -15,6 +15,3 @@ Route::get('/dashboard/pendaftaran/dutakampus', [DashboardDutaKampusController::
 	->middleware(['auth'])->name('pendaftaran.dutakampus.index');
 Route::put('/dashboard/pendaftaran/dutakampus', [DashboardDutaKampusController::class, 'update'])
 	->middleware(['auth'])->name('pendaftaran.dutakampus.update');
-
-Route::get('/apresiasi/artech', [LandingMaintenanceController::class, "index"])
-	->name('landing.apresiasi.artech.index');
