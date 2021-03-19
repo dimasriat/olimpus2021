@@ -118,8 +118,48 @@ main #content #comingsoon {
 
 main #chats {
   width: 100%;
-  height: 480px;
-  background-color: purple;
+}
+
+main #chats #write {
+  width: 100%;
+  padding: 0 1rem 1rem;
+}
+
+main #chats #write form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #chats #write form input,
+main #chats #write form textarea {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+main #chats #read {
+  padding: 1rem;
+  width: 100%;
+  overflow: auto;
+}
+
+main #chats #read #chatbox {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  width: 100%;
+  height: 320px;
+  overflow: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,10 +177,19 @@ main #chats {
   }
   main #content #rundown {
     width: 30%;
-    height: 360px;
+    height: 512px;
+    overflow: auto;
   }
   main #chats {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #chats #write {
+    width: 30%;
+  }
+  main #chats #read {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=opening.css.map */

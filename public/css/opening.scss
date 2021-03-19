@@ -94,8 +94,38 @@ main {
     }
     #chats {
         width: 100%;
-        height: 480px;
-        background-color: purple;
+        #write {
+            width: 100%;
+            padding: 0 1rem 1rem;
+            form {
+                display: flex;
+                flex-direction: column;
+                input,
+                textarea {
+                    margin-top: 1rem;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    color: white;
+                    background-color: black;
+                    border: 1px solid white;
+                }
+            }
+        }
+        #read {
+            padding: 1rem;
+            width: 100%;
+            overflow: auto;
+            #chatbox {
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                color: white;
+                background-color: black;
+                border: 1px solid white;
+                width: 100%;
+                height: 320px;
+                overflow: auto;
+            }
+        }
     }
 }
 
@@ -112,11 +142,18 @@ main {
             }
             #rundown {
                 width: 30%;
-                height: 360px;
+                height: 512px;
+                overflow: auto;
             }
         }
         #chats {
-            width: 100%;
+            display: flex;
+            #write {
+                width: 30%;
+            }
+            #read {
+                width: 70%;
+            }
         }
     }
 }
