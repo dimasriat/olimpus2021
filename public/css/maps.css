@@ -205,14 +205,20 @@ body {
   }
 }
 
-.overlay {
+#overlay {
   position: fixed;
-  z-index: 20;
+  z-index: 100;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
-  display: none;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -222,13 +228,7 @@ body {
   padding: 1rem 0;
 }
 
-.overlay .window {
-  margin: 0 1rem;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  border-radius: 1rem;
-  overflow: hidden;
+#overlay .window {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,29 +236,33 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 1rem;
 }
 
-.overlay .window .control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+#overlay .window .tagline {
+  font-style: italic;
 }
 
-.overlay .window .control button {
-  background-color: crimson;
-  width: 4rem;
-  height: 2rem;
-  color: white;
-  font-weight: bold;
-  border: none;
+#overlay .window img {
+  width: 128px;
 }
 
-.overlay .window iframe {
+#overlay .window #explore {
+  margin-top: 1rem;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=maps.css.map */

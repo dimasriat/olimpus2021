@@ -11,6 +11,15 @@
 </head>
 
 <body>
+	<div id="overlay">
+		<div class="window">
+			<img src="{{ asset('img/logo-big.png') }}" alt="Olimpus" />
+			<h1>Olimpus 2021</h1>
+			<div class="tagline">"Let's The Medieval Begin!"</div>
+			<audio src="{{ asset('music/jingle.mp3') }}" id="player"></audio>
+			<button id="explore">Explore!</button>
+		</div>
+	</div>
 	<div id="wrapper">
 		<header>
 			<img src="{{ asset('img/logo-big.png') }}" alt="Olimpus" class="img-fluid" style="max-height:32px" />
@@ -88,7 +97,6 @@
 		</footer>
 	</div>
 	<script src="{{ asset('js/maps.js') }}"></script>
-	<script src="{{ asset('js/jquery.min.js') }}"></script>
 </body>
 
 </html>

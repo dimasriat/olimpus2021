@@ -163,42 +163,41 @@ body {
     }
 }
 
-.overlay {
+#overlay {
     position: fixed;
-    z-index: 20;
+    z-index: 100;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
-    display: none;
     color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
     .window {
-        margin: 0 1rem;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        border-radius: 1rem;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
-        .control {
-            display: flex;
-            justify-content: flex-end;
-            button {
-                background-color: crimson;
-                width: 4rem;
-                height: 2rem;
-                color: white;
-                font-weight: bold;
-                border: none;
-            }
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: black;
+        border-radius: 1rem;
+        .tagline {
+            font-style: italic;
         }
-        iframe {
+        img {
+            width: 128px;
+        }
+        #explore {
+            margin-top: 1rem;
             width: 100%;
-            height: 100%;
-            overflow: hidden;
+            padding: 0.25rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
         }
     }
 }
