@@ -47,6 +47,7 @@ Route::get('/maps/closing', function () {
  * LANDING PAGE
  */
 Route::get('/', function () {
+	return redirect()->route('maps.index');
 	$api = json_decode(file_get_contents(__DIR__ . "/../resources/api/api.json"), true);
 	return view('landing.index', ['api' => $api]);
 })->name('landing.index');

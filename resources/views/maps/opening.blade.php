@@ -19,7 +19,7 @@
 		<main>
 			<div id="content">
 				<div id="video">
-					<iframe src="https://www.youtube.com/embed/p8PCl7HAhuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/l2MiEzS1WCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div id="rundown">
 					<h2>Rundown</h2>
