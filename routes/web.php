@@ -19,23 +19,23 @@ Route::get('/test', function () {
 /**
  * NEW OLIMPUS
  */
-Route::get('/maps', function () {
+Route::get('/', function () {
 	return view('maps.index');
 })->name('maps.index');
 
-Route::get('/maps/opening', function () {
+Route::get('/opening', function () {
 	return view('maps.opening');
 })->name('maps.opening');
 
-Route::get('/maps/lomba', function () {
+Route::get('/lomba', function () {
 	return view('maps.lomba');
 })->name('maps.lomba');
 
-Route::get('/maps/artech', function () {
+Route::get('/artech', function () {
 	return view('maps.artech');
 })->name('maps.artech');
 
-Route::get('/maps/closing', function () {
+Route::get('/closing', function () {
 	return view('maps.closing');
 })->name('maps.closing');
 
@@ -46,11 +46,10 @@ Route::get('/maps/closing', function () {
 /**
  * LANDING PAGE
  */
-Route::get('/', function () {
-	return redirect()->route('maps.index');
-	$api = json_decode(file_get_contents(__DIR__ . "/../resources/api/api.json"), true);
-	return view('landing.index', ['api' => $api]);
-})->name('landing.index');
+// Route::get('/', function () {
+// 	$api = json_decode(file_get_contents(__DIR__ . "/../resources/api/api.json"), true);
+// 	return view('landing.index', ['api' => $api]);
+// })->name('landing.index');
 Route::get('/olahraga', function () {
 	$api = json_decode(file_get_contents(__DIR__ . "/../resources/api/api.json"), true);
 	return view('landing.olahraga.index', ['api' => $api]);
