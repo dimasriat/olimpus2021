@@ -42,7 +42,7 @@
 						</tr>
 						<tr>
 							<td>19.40</td>
-							<td>Sambutan DPA</td>
+							<td>Sambutan Direktur Reputasi Akademik dan Kemahasiswaan</td>
 						</tr>
 						<tr>
 							<td>19.45</td>
