@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Olimpus 2021</title>
-	<link rel="stylesheet" href="{{ asset('css/maps.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/maps2.css') }}" />
 	<link rel="shortcut icon" href="{{ asset('img/logo-big.png') }}" type="image/png">
 </head>
 
@@ -96,7 +96,7 @@
 			<div>Copyright © 2021 Olimpus UNS. All rights reserved.</div>
 		</footer>
 	</div>
-	<script src="{{ asset('js/maps.js') }}"></script>
+	<script src="{{ asset('js/maps2.js') }}"></script>
 </body>
 
 </html>
