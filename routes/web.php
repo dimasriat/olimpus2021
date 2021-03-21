@@ -20,7 +20,7 @@ Route::get('/test', function () {
  * NEW OLIMPUS
  */
 Route::get('/', function () {
-	return view('maps.index3');
+	return view('maps.index');
 })->name('maps.index');
 
 Route::get('/opening', function () {

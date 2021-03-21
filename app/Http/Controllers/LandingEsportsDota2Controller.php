@@ -12,7 +12,7 @@ class LandingEsportsDota2Controller extends Controller
 	public $pamflet = 'img/olahraga/esports/dota2/pamflet.jpg';
 	public $guidebook = 'https://drive.google.com/drive/folders/1EKn38Yw8vPnKOgF5WYB1ZPKLVt_OXeEj?usp=sharing';
 	public $nominal = 'Rp20.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index()

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Olimpus 2021</title>
-	<link rel="stylesheet" href="{{ asset('css/opening.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/lomba.css') }}" />
 	<link rel="shortcut icon" href="{{ asset('img/logo-big.png') }}" type="image/png">
 </head>
 
@@ -18,9 +18,20 @@
 		</header>
 		<main>
 			<div id="content">
-				<div id="comingsoon">
-					<h1>Coming Soon</h1>
-					<p id="countdown"></p>
+				<h2>Pendaftaran Lomba</h2>
+				<div id="bidang-container">
+					<div class="bidang">
+						<h3>Olahraga</h3>
+						<a href="{{ route('landing.olahraga.catur.index') }}">Catur</a>
+					</div>
+					<div class="bidang">
+						<h3>Seni Budaya</h3>
+						<a href="{{ route('landing.senibudaya.senisastra.mhq.index') }}">Hifdzil Qur'an</a>
+					</div>
+					<div class="bidang">
+						<h3>Keilmiahan</h3>
+						<a href="{{ route('landing.keilmiahan.speech.index') }}">Speech</a>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -29,37 +40,6 @@
 		</footer>
 	</div>
 
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("Mar 21, 2021 15:00:00").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-			// Get today's date and time
-			var now = new Date().getTime();
-
-			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
-
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Display the result in the element with id="demo"
-			document.getElementById("countdown").innerHTML = days + " hari, " + hours + " jam, " +
-				minutes + " menit, " + seconds + " detik 😉";
-
-			// If the count down is finished, write some text
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("countdown").innerHTML = "Maintenance";
-			}
-		}, 1000);
-	</script>
-	<script src="{{ asset('js/jquery.min.js') }}"></script>
 </body>
 
 </html>

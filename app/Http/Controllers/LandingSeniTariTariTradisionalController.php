@@ -11,7 +11,7 @@ class LandingSeniTariTariTradisionalController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285640641995';
 	public $pamflet = 'img/senibudaya/senitari/taritradisional/pamflet_revisi2.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1wKeEQEOk_3Wckus7sQ7Gss9L8JIiHMhY?usp=sharing';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index() {

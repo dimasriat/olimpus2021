@@ -12,7 +12,7 @@ class LandingDutaKampusController extends Controller
 	public $pamflet = 'img/apresiasi/dutakampus/dutakampus.png';
 	public $guidebook = 'http://bit.ly/GuidebookDutKamUNS2021';
 	public $nominal = 'Rp50.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index()

@@ -11,7 +11,7 @@ class LandingSeniSastraMtqController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6285290920050';
 	public $pamflet = 'img/senibudaya/senisastra/mtq/pamflet_revisi.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/1W-H8bmTg_0NO7ZgLqs4XHrtRUuA4dxZv?usp=sharing';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index() {

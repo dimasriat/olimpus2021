@@ -11,7 +11,7 @@ class LandingSeniRupaKomikStripController extends Controller
 	public $whatsapp = 'https://api.whatsapp.com/send?phone=6287708513068';
 	public $pamflet = 'img/senibudaya/senirupa/komikstrip/pamflet_revisi.png';
 	public $guidebook = 'https://drive.google.com/drive/folders/18asyv024_B3CEDkL_h5CK39UYpfjfC4v?usp=sharing';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index()

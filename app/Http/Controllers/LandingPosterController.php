@@ -12,7 +12,7 @@ class LandingPosterController extends Controller
 	public $pamflet = 'img/keilmiahan/poster/pamflet.jpg';
 	public $guidebook = 'http://bit.ly/PosterOlimpus2021';
 	public $nominal = 'Rp15.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = false;
 
 	public function index()

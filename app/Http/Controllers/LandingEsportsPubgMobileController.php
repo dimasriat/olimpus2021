@@ -12,7 +12,7 @@ class LandingEsportsPubgMobileController extends Controller
 	public $pamflet = 'img/olahraga/esports/pubgmobile/pamflet.jpg';
 	public $guidebook = 'https://drive.google.com/drive/folders/1EKn38Yw8vPnKOgF5WYB1ZPKLVt_OXeEj?usp=sharing';
 	public $nominal = 'Rp10.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = true;
 
 	public function index()
