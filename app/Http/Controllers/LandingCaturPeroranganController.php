@@ -12,7 +12,7 @@ class LandingCaturPeroranganController extends Controller
 	public $pamflet = 'img/olahraga/catur/perorangan/pamflet.png';
 	public $guidebook = 'https://bit.ly/CaturOlimpus2021';
 	public $nominal = 'Rp25.000,00';
-	public $maintenance = false;
+	public $maintenance = true;
 	public $konfirmasi_bem = false;
 
 	public function index()

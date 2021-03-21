@@ -21,10 +21,6 @@
 				<h2>Pendaftaran Lomba</h2>
 				<div id="bidang-container">
 					<div class="bidang">
-						<h3>Olahraga</h3>
-						<a href="{{ route('landing.olahraga.catur.index') }}">Catur</a>
-					</div>
-					<div class="bidang">
 						<h3>Seni Budaya</h3>
 						<a href="{{ route('landing.senibudaya.senisastra.mhq.index') }}">Hifdzil Qur'an</a>
 					</div>
