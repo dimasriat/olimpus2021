@@ -32,8 +32,16 @@ Route::get('/lomba', function () {
 })->name('maps.lomba');
 
 Route::get('/artech', function () {
-	return view('maps.artech');
+	if (env('APP_DEBUG')) {
+		return view('maps.artech-maps');
+	} else {
+		return view('maps.artech');
+	}
 })->name('maps.artech');
+
+Route::get('/artech/test', function(){
+	return view('maps.artech-maps')
+});
 
 Route::get('/closing', function () {
 	return view('maps.closing');
