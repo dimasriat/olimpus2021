@@ -40,7 +40,7 @@ Route::get('/artech', function () {
 })->name('maps.artech');
 
 Route::get('/artech/test', function(){
-	return view('maps.artech-maps')
+	return view('maps.artech-maps');
 });
 
 Route::get('/closing', function () {
