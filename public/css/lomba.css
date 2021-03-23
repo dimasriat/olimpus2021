@@ -80,13 +80,13 @@ main {
   color: white;
 }
 
-main #content {
+main #pendaftaran {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
 }
 
-main #content #bidang-container {
+main #pendaftaran #bidang-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,12 +96,12 @@ main #content #bidang-container {
           flex-direction: row;
 }
 
-main #content #bidang-container .bidang {
+main #pendaftaran #bidang-container .bidang {
   width: 100%;
   padding: 0 0.5rem;
 }
 
-main #content #bidang-container .bidang a {
+main #pendaftaran #bidang-container .bidang a {
   width: 100%;
   font-weight: bold;
   display: -webkit-box;
@@ -120,64 +120,69 @@ main #content #bidang-container .bidang a {
   text-decoration: none;
 }
 
-main #content #bidang-container .bidang a:hover {
+main #pendaftaran #bidang-container .bidang a:hover {
   background-color: white;
   color: crimson;
 }
 
-main #chats {
+main #score-board {
   width: 100%;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-main #chats #write {
+main #score-board #score-board-container {
+  padding: 0 1rem;
+}
+
+main #score-board #score-board-container #score-table {
+  margin: 1rem;
+}
+
+main #score-board #score-board-container #score-table table {
   width: 100%;
-  padding: 0 1rem 1rem;
+  border-collapse: collapse;
 }
 
-main #chats #write form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main #chats #write form input,
-main #chats #write form textarea {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  color: white;
-  background-color: black;
+main #score-board #score-board-container #score-table table tr td {
   border: 1px solid white;
 }
 
-main #chats #read {
-  padding: 1rem;
-  width: 100%;
-  overflow: auto;
+main #score-board #score-board-container #score-table table tr th {
+  border: 1px solid white;
+  background-color: teal;
+  color: white;
 }
 
-main #chats #read #chatbox {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  color: white;
-  background-color: black;
-  border: 1px solid white;
+main #score-board #score-board-container #score-content {
+  margin: 1rem;
+}
+
+main #score-board #score-board-container #score-content table {
   width: 100%;
-  height: 320px;
-  overflow: auto;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+main #score-board #score-board-container #score-content table tr td {
+  border: 1px solid white;
+}
+
+main #score-board #score-board-container #score-content table tr th {
+  border: 1px solid white;
+  background-color: gold;
+  color: black;
 }
 
 @media only screen and (min-width: 768px) {
-  main #content {
-    width: 100%;
-    padding: 1rem 0;
+  main {
     text-align: center;
   }
-  main #content #bidang-container {
+  main #pendaftaran {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  main #pendaftaran #bidang-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -189,8 +194,22 @@ main #chats #read #chatbox {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  main #content #bidang-container .bidang {
+  main #pendaftaran #bidang-container .bidang {
     width: 100%;
+  }
+  main #score-board {
+    width: 100%;
+  }
+  main #score-board #score-board-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #score-board #score-board-container #score-table {
+    width: 50%;
+  }
+  main #score-board #score-board-container #score-content {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=lomba.css.map */
