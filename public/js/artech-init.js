@@ -26,15 +26,58 @@ function addArt(panorama, art, x, y, z) {
         artImage.setAttribute("data-desc", folder + "desc-" + art);
         artImage.src = artImage.getAttribute("data-art");
     });
+
     panorama.add(infospot);
 }
 function addFloor(p1, p2, x, y, z) {
     p1.link(p2, new THREE.Vector3(x, y, z));
 }
+function addHelper(panorama) {
+    const helper = new PANOLENS.Infospot();
+    helper.position.set(0, -1000, -3000);
+    helper.addHoverText(`${helper.position.x} ${helper.position.y} ${helper.position.z}`);
+    window.addEventListener("keydown", function (e) {
+        const distance = 250;
+        if (e.key === "w") {
+            helper.position.y += distance;
+        }
+        if (e.key === "s") {
+            helper.position.y -= distance;
+        }
+        if (e.key === "a") {
+            const sign = helper.position.z < 0 ? 1 : -1;
+            helper.position.x -= sign * distance;
+        }
+        if (e.key === "d") {
+            const sign = helper.position.z < 0 ? 1 : -1;
+            helper.position.x += sign * distance;
+        }
+        if (e.key === "e") {
+            helper.position.z += distance;
+        }
+        if (e.key === "q") {
+            helper.position.z -= distance;
+        }
+        if (e.key === "x") {
+            helper.hide();
+            helper.position.set(0, -1000, -3000);
+        }
+        if (e.key === "z") {
+            helper.show();
+            helper.focus();
+        }
+        helper.setText(`${helper.position.x} ${helper.position.y} ${helper.position.z}`);
+    });
+    helper.hide();
+    panorama.add(helper);
+}
 function addPanorama(image) {
-    const panorama = new PANOLENS.ImagePanorama("/img/artech_assets/panorama/" + image);
-	viewer.add(panorama);
-	return panorama;
+    const panorama = new PANOLENS.ImagePanorama(
+        "/img/artech_assets/panorama/" + image
+    );
+    addHelper(panorama);
+    viewer.add(panorama);
+    return panorama;
 }
 const viewer = new PANOLENS.Viewer({
     autoHideInfospot: false,

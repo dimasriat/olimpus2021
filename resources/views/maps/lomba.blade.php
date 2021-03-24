@@ -54,21 +54,21 @@
 								<td>-</td>
 							</tr>
 							<tr>
+								<td>FH</td>
+								<td>-</td>
+								<td>-</td>
+								<td>2</td>
+							</tr>
+							<tr>
 								<td>FT</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>FH</td>
-								<td>-</td>
-								<td>-</td>
-								<td>1</td>
-							</tr>
-							<tr>
 								<td>FKIP</td>
-								<td>-</td>
 								<td>1</td>
+								<td>2</td>
 								<td>-</td>
 							</tr>
 							<tr>
@@ -107,7 +107,7 @@
 							<tr>
 								<td>1st</td>
 								<td>FKOR</td>
-								<td>Team B</td>
+								<td>Tim B</td>
 							</tr>
 							<tr>
 								<td>2nd</td>
@@ -117,49 +117,30 @@
 							<tr>
 								<td>3rd</td>
 								<td>FH</td>
-								<td>A</td>
+								<td>Tim A</td>
 							</tr>
 						</table>
 						<table>
 							<tr>
-								<th colspan="3">LOMBA 2</th>
+								<th colspan="3">Mobile Legends</th>
 							</tr>
 							<tr>
 								<td>1st</td>
-								<td>-</td>
-								<td>-</td>
+								<td>FKIP</td>
+								<td>geography</td>
 							</tr>
 							<tr>
 								<td>2nd</td>
-								<td>-</td>
-								<td>-</td>
+								<td>FKIP</td>
+								<td>sk</td>
 							</tr>
 							<tr>
 								<td>3rd</td>
-								<td>-</td>
-								<td>-</td>
+								<td>FH</td>
+								<td>Tim A</td>
 							</tr>
 						</table>
-						<table>
-							<tr>
-								<th colspan="3">LOMBA 3</th>
-							</tr>
-							<tr>
-								<td>1st</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>2nd</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>3rd</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-						</table>
+						
 					</div>
 				</div>
 			</div>
