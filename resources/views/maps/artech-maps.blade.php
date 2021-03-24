@@ -12,7 +12,7 @@
 
 <body>
 	<header>
-		<img src="img/logo-big.png" />
+		<img src="{{ asset('img/logo-big.png') }}" />
 		<div>Olimpus 2021 | Art and Technology Paradise</div>
 	</header>
 	<input id="copytext" type="text" />
