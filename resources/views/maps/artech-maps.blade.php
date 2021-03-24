@@ -11,21 +11,26 @@
 </head>
 
 <body>
-	<div class="overlay" id="overlay">
-		<div id="window-control">
-			<button class="desc control-btn" id="desc-overlay">Show Description</button>
-			<button class="zoom control-btn" id="zoom-overlay">Zoom</button>
-			<button class="close control-btn" id="close-overlay">Close</button>
-		</div>
-		<div id="window-content">
-			<img src="" id="art-image" data-art="" data-desc="" />
-		</div>
-	</div>
-
-	<div class="credit">
-		<img src="{{ asset('img/logo-big.png') }}" alt="Olimpus" class="img-fluid" style="max-height:32px" />
+	<header>
+		<img src="img/logo-big.png" />
 		<div>Olimpus 2021 | Art and Technology Paradise</div>
+	</header>
+	<input id="copytext" type="text" />
+	<div id="overlay">
+		<div id="overlay-control">
+			<button id="overlay-desc-toggle">Toggle Description</button>
+			<button id="overlay-close">Close</button>
+		</div>
+		<div id="overlay-content">
+			<div id="art-container">
+				<img src="/img/artech_assets/art/1/art1.jpg" class="art-img" id="art-1-1" />
+			</div>
+			<div id="desc-container">
+				<img src="/img/artech_assets/art/1/desc1.jpg" class="desc-img" id="desc-1-1" />
+			</div>
+		</div>
 	</div>
+	<div id="viewer"></div>
 
 	<script src="{{ asset('js/three.min.js') }}"></script>
 	<script src="{{ asset('js/panolens.min.js') }}"></script>
