@@ -78,9 +78,22 @@ header {
 
 #overlay-control {
 	width: 100%;
-	background-color: black;
 	display: flex;
 	justify-content: space-between;
+	position: fixed;
+	z-index: 100;
+	button {
+		border: none;
+		color: white;
+		width: 10rem;
+		padding: 0.5rem 0;
+	}
+	#overlay-close {
+		background-color: crimson;
+	}
+	#overlay-desc-toggle {
+		background-color: teal;
+	}
 }
 
 #overlay-content {
