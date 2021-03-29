@@ -1,6 +1,6 @@
 // MENYIAPKAN PANORAMA
-const panorama9 = addPanorama("9.jpg");
 const panorama0 = addPanorama("0.jpg");
+const panorama9 = addPanorama("9.jpg");
 
 const panorama1 = addPanorama("1.jpg");
 const panorama8 = addPanorama("8.jpg");
@@ -123,6 +123,7 @@ addArt(panorama6, "6-20", 6750, -1250, -5000);
 addArt(panorama6, "6-21", 500, -1000, 2250);
 addArt(panorama6, "6-22", -750, -750, 3000);
 
+addArt(panorama7, "6-1", 4000, -1000, 1500);
 addArt(panorama7, "7-1", 2500, -1500, -3000);
 addArt(panorama7, "7-2", -4250, -1250, 1250);
 addArt(panorama7, "7-3", 3750, -1250, 3000);

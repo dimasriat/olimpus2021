@@ -32,13 +32,13 @@
 				<a target="_blank" href="{{ route('maps.artech') }}" class="btn-maps" id="artech-btn">Art and Technology Paradise</a>
 				<a target="_blank" href="{{ route('maps.opening') }}" class="btn-maps" id="opening-btn">Opening Ceremony</a>
 			</div>
-			<img src="{{ asset('img/maps2/full.jpg') }}" />
+			<img src="{{ asset('img/maps3/full.jpg') }}" />
 		</div>
 		<div id="mobile-btn-container">
 			<!-- Opening -->
 			<div class="mobile-btn">
 				<div class="mobile-btn-maps-img">
-					<img src="{{ asset('img/maps2/opening.png') }}" />
+					<img src="{{ asset('img/maps3/opening.png') }}" />
 				</div>
 				<div class="mobile-btn-text-container">
 					<div class="mobile-btn-title">
@@ -52,7 +52,7 @@
 			<!-- Artech -->
 			<div class="mobile-btn">
 				<div class="mobile-btn-maps-img">
-					<img src="{{ asset('img/maps2/artech.png') }}" />
+					<img src="{{ asset('img/maps3/artech.png') }}" />
 				</div>
 				<div class="mobile-btn-text-container">
 					<div class="mobile-btn-title">
@@ -66,7 +66,7 @@
 			<!-- Lomba Bidang -->
 			<div class="mobile-btn">
 				<div class="mobile-btn-maps-img">
-					<img src="{{ asset('img/maps2/lomba.png') }}" />
+					<img src="{{ asset('img/maps3/lomba.png') }}" />
 				</div>
 				<div class="mobile-btn-text-container">
 					<div class="mobile-btn-title">
@@ -80,7 +80,7 @@
 			<!-- Closing -->
 			<div class="mobile-btn">
 				<div class="mobile-btn-maps-img">
-					<img src="{{ asset('img/maps2/closing.png') }}" />
+					<img src="{{ asset('img/maps3/closing.png') }}" />
 				</div>
 				<div class="mobile-btn-text-container">
 					<div class="mobile-btn-title">

@@ -76,7 +76,7 @@ body {
 
 #maps-container img {
   width: 100%;
-  display: block;
+  display: relative;
   border-radius: 1rem;
 }
 
@@ -194,7 +194,7 @@ body {
     color: white;
     position: relative;
     font-size: 1.25vw;
-    top: 10vw;
+    top: 9vw;
     margin-top: 3vw;
     text-decoration: none;
   }
