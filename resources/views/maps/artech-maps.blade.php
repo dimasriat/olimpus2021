@@ -2,23 +2,23 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
-	<title>Olimpus 2021 | Artech</title>
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-	<link rel="shortcut icon" href="{{ asset('img/logo-big.png') }}" type="image/png">
-	<link rel="stylesheet" href="{{ asset('css/artech.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+    <title>Olimpus 2021 | Artech</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="shortcut icon" href="{{ asset('img/logo-big.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ asset('css/artech.css') }}">
 </head>
 
 <body>
-	<header>
-		<img src="{{ asset('img/logo-big.png') }}" />
-		<div>Olimpus 2021 | Art and Technology Paradise</div>
-	</header>
-	<input id="copytext" type="text" readonly style="visibility: hidden;" />
+    <header>
+        <img src="{{ asset('img/logo-big.png') }}" />
+        <div>Olimpus 2021 | Art and Technology Paradise</div>
+    </header>
+    <input id="copytext" type="text" readonly style="visibility: hidden;" />
     <div id="overlay">
         <div id="overlay-control">
-            <button id="overlay-desc-toggle">Toggle Description</button>
+            <button id="overlay-desc-toggle">More</button>
             <button id="overlay-close">Close</button>
         </div>
         <div id="overlay-content">
@@ -131,7 +131,9 @@
                 <img src="/img/artech_final/9/art_10.jpg" class="art-img" id="art-9-10" />
                 <img src="/img/artech_final/9/art_11.jpg" class="art-img" id="art-9-11" />
                 <img src="/img/artech_final/9/art_12.jpg" class="art-img" id="art-9-12" />
-                <img src="/img/artech_final/9/art_13.jpg" class="art-img" id="art-9-13" />
+                <!-- <img src="/img/artech_final/9/art_13.jpg" class="art-img" id="art-9-13" /> -->
+                <iframe width="560" height="315" class="art-img" id="art-9-13" src="https://www.youtube.com/embed/52LFnnC-cXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 <img src="/img/artech_final/9/art_14.jpg" class="art-img" id="art-9-14" />
                 <img src="/img/artech_final/9/art_15.jpeg" class="art-img" id="art-9-15" />
                 <img src="/img/artech_final/9/art_16.jpg" class="art-img" id="art-9-16" />
@@ -247,15 +249,25 @@
                 <img src="/img/artech_final/9/desc_8.jpg" class="desc-img" id="desc-9-8" />
                 <img src="/img/artech_final/9/desc_9.jpg" class="desc-img" id="desc-9-9" />
 
+                <iframe class="desc-img" id="desc-9-10" width="560" height="315" src="https://www.youtube.com/embed/FIYmpj7IKnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-11" width="560" height="315" src="https://www.youtube.com/embed/7fUpWZiPrQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-12" width="560" height="315" src="https://www.youtube.com/embed/fzO6do9nL0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-14" width="560" height="315" src="https://www.youtube.com/embed/8gQZMVBYiWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-15" width="560" height="315" src="https://www.youtube.com/embed/8OzQ1GGbhXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-16" width="560" height="315" src="https://www.youtube.com/embed/3x7Dfepe5pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-17" width="560" height="315" src="https://www.youtube.com/embed/Y8MuTfOTstE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-18" width="560" height="315" src="https://www.youtube.com/embed/YYJwB10xpnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="desc-img" id="desc-9-19" width="560" height="315" src="https://www.youtube.com/embed/lTP2Rn82y8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
         </div>
     </div>
-	<div id="viewer"></div>
+    <div id="viewer"></div>
 
-	<script src="{{ asset('js/three.min.js') }}"></script>
-	<script src="{{ asset('js/panolens.min.js') }}"></script>
-	<script src="{{ asset('js/artech-init.js') }}"></script>
-	<script src="{{ asset('js/artech.js') }}"></script>
+    <script src="{{ asset('js/three.min.js') }}"></script>
+    <script src="{{ asset('js/panolens.min.js') }}"></script>
+    <script src="{{ asset('js/artech-init.js') }}"></script>
+    <script src="{{ asset('js/artech.js') }}"></script>
 
 </body>
 

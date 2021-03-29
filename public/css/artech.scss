@@ -116,18 +116,18 @@ header {
 	max-height: 90vmin;
 	margin: 0 1rem;
 	border: 1px solid black;
+	display: none;
 }
 
 #desc-container {
 	position: fixed;
-	display: flex;
-	align-items: flex-end;
+	display: none;
+	align-items: center;
 	justify-content: center;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.75);
 	z-index: 20;
-	padding-bottom: 3rem;
 }
 
 .desc-img {
@@ -135,4 +135,5 @@ header {
 	max-height: 50vh;
 	margin: 0 1rem;
 	border: 1px solid black;
+	display: none;
 }

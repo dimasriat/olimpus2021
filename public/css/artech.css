@@ -150,16 +150,15 @@ header div {
   max-height: 90vmin;
   margin: 0 1rem;
   border: 1px solid black;
+  display: none;
 }
 
 #desc-container {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -167,7 +166,6 @@ header div {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 20;
-  padding-bottom: 3rem;
 }
 
 .desc-img {
@@ -175,5 +173,6 @@ header div {
   max-height: 50vh;
   margin: 0 1rem;
   border: 1px solid black;
+  display: none;
 }
 /*# sourceMappingURL=artech.css.map */

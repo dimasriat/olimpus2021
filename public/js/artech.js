@@ -1,6 +1,6 @@
 // MENYIAPKAN PANORAMA
-const panorama0 = addPanorama("0.jpg");
 const panorama9 = addPanorama("9.jpg");
+const panorama0 = addPanorama("0.jpg");
 
 const panorama1 = addPanorama("1.jpg");
 const panorama8 = addPanorama("8.jpg");

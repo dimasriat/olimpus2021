@@ -21,10 +21,6 @@
 				<h2>Pendaftaran Lomba</h2>
 				<div id="bidang-container">
 					<div class="bidang">
-						<h3>Seni Budaya</h3>
-						<a href="{{ route('landing.senibudaya.senisastra.mhq.index') }}">Hifdzil Qur'an</a>
-					</div>
-					<div class="bidang">
 						<h3>Keilmiahan</h3>
 						<a href="{{ route('landing.keilmiahan.speech.index') }}">Speech</a>
 					</div>
@@ -42,9 +38,33 @@
 								<th>3rd 🥉</th>
 							</tr>
 							<tr>
-								<td>FMIPA</td>
+								<td>FKIP</td>
+								<td>2</td>
+								<td>2</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>SV</td>
+								<td>2</td>
+								<td>1</td>
 								<td>-</td>
+							</tr>
+							<tr>
+								<td>FK</td>
+								<td>1</td>
+								<td>3</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>FIB</td>
+								<td>1</td>
+								<td>1</td>
 								<td>-</td>
+							</tr>
+							<tr>
+								<td>FT</td>
+								<td>1</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
@@ -60,38 +80,25 @@
 								<td>2</td>
 							</tr>
 							<tr>
-								<td>FT</td>
+								<td>FP</td>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FKIP</td>
-								<td>1</td>
 								<td>2</td>
-								<td>-</td>
 							</tr>
 							<tr>
-								<td>SV</td>
+								<td>FISIP</td>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
+								<td>1</td>
 							</tr>
 							<tr>
 								<td>FEB</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
-							</tr>
-							
+							</tr>		
 							<tr>
-								<td>FIB</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FISIP</td>
+								<td>FMIPA</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
@@ -102,7 +109,7 @@
 					<div id="score-content">
 						<table>
 							<tr>
-								<th colspan="3">Pubg Mobile</th>
+								<th colspan="3">PUBG Mobile</th>
 							</tr>
 							<tr>
 								<td>1st</td>
@@ -140,7 +147,136 @@
 								<td>Tim A</td>
 							</tr>
 						</table>
-						
+						<table>
+							<tr>
+								<th colspan="3">LKTI</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>Rio Sindaru</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FK</td>
+								<td>Dea Fauziyyanti</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FISIP</td>
+								<td>Ina Nur Janah Isnaini</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Baca Puisi</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FKIP</td>
+								<td>Arifatul Jannah</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>SV</td>
+								<td>Eka Setiya Narwati</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FK</td>
+								<td>Ghania Bilaistiyani Syakila</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Cipta Cerpen</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FIB</td>
+								<td>Maiyang Resmanti</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FIB</td>
+								<td>Ayu Wandana Yuantika</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FK</td>
+								<td>Nadyah Ni'matussholihah</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Essay</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>SV</td>
+								<td>Ghozi</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FK</td>
+								<td>Muhammad Miftah</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FP</td>
+								<td>Karimah</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Solo Vokal</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>SV</td>
+								<td>Feliks Fernando</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FK</td>
+								<td>Sopia Nur Habibah</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FKIP</td>
+								<td>Mukti Mega Mawarni</td>
+							</tr>
+							<tr>
+								<td>Juara Favorit</td>
+								<td>FP</td>
+								<td>Firzanah Adya Talitha</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Musik Grup</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FT</td>
+								<td>BANDWIDTH</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FT</td>
+								<td>MIE</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FP</td>
+								<td>PELITA MUSIC</td>
+							</tr>
+							<tr>
+								<td>Juara Favorit</td>
+								<td>FP</td>
+								<td>DRAF SATU</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
