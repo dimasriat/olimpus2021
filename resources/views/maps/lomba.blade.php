@@ -17,19 +17,11 @@
 			<div>Olimpus 2021</div>
 		</header>
 		<main>
-			<div id="pendaftaran">
-				<h2>Pendaftaran Lomba</h2>
-				<div id="bidang-container">
-					<div class="bidang">
-						<h3>Keilmiahan</h3>
-						<a href="{{ route('landing.keilmiahan.speech.index') }}">Speech</a>
-					</div>
-				</div>
-			</div>
 			<div id="score-board">
 				<h2>Perolehan Skor</h2>
 				<div id="score-board-container">
 					<div id="score-table">
+						<h3>Perolehan Medali Umum</h3>
 						<table>
 							<tr>
 								<th>Fakultas</th>
@@ -38,22 +30,28 @@
 								<th>3rd 🥉</th>
 							</tr>
 							<tr>
+								<td>FK</td>
+								<td>2</td>
+								<td>3</td>
+								<td>2</td>
+							</tr>
+							<tr>
 								<td>FKIP</td>
 								<td>2</td>
-								<td>2</td>
+								<td>3</td>
 								<td>1</td>
 							</tr>
 							<tr>
 								<td>SV</td>
 								<td>2</td>
 								<td>1</td>
-								<td>-</td>
+								<td>1</td>
 							</tr>
 							<tr>
-								<td>FK</td>
+								<td>FT</td>
 								<td>1</td>
-								<td>3</td>
-								<td>2</td>
+								<td>1</td>
+								<td>1</td>
 							</tr>
 							<tr>
 								<td>FIB</td>
@@ -62,10 +60,10 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>FT</td>
-								<td>1</td>
+								<td>FH</td>
 								<td>1</td>
 								<td>-</td>
+								<td>2</td>
 							</tr>
 							<tr>
 								<td>FKOR</td>
@@ -74,15 +72,9 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>FH</td>
-								<td>-</td>
-								<td>-</td>
-								<td>2</td>
-							</tr>
-							<tr>
 								<td>FP</td>
 								<td>-</td>
-								<td>-</td>
+								<td>1</td>
 								<td>2</td>
 							</tr>
 							<tr>
@@ -104,9 +96,257 @@
 								<td>-</td>
 							</tr>
 						</table>
+						<h3>Perolehan Medali Olahraga</h3>
+						<table>
+							<tr>
+								<th>Fakultas</th>
+								<th>1st 🥇</th>
+								<th>2nd 🥈</th>
+								<th>3rd 🥉</th>
+							</tr>
+							<tr>
+								<td>FK</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>SV</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FT</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FIB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FH</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKOR</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FISIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FEB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>		
+							<tr>
+								<td>FMIPA</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</table>
+						
+						<h3>Perolehan Medali Seni Budaya</h3>
+						<table>
+							<tr>
+								<th>Fakultas</th>
+								<th>1st 🥇</th>
+								<th>2nd 🥈</th>
+								<th>3rd 🥉</th>
+							</tr>
+							<tr>
+								<td>FK</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>SV</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FT</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FIB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FH</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKOR</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FISIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FEB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>		
+							<tr>
+								<td>FMIPA</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</table>
+						
+						<h3>Perolehan Medali Keilmiahan</h3>
+						<table>
+							<tr>
+								<th>Fakultas</th>
+								<th>1st 🥇</th>
+								<th>2nd 🥈</th>
+								<th>3rd 🥉</th>
+							</tr>
+							<tr>
+								<td>FK</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>SV</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FT</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FIB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FH</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKOR</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FISIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FEB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>		
+							<tr>
+								<td>FMIPA</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</table>
 					</div>
 
 					<div id="score-content">
+						<h3>Bidang Olahraga</h3>
+						<table>
+							<tr>
+								<th colspan="3">Point Blank</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FH</td>
+								<td>KantinKopso</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FP</td>
+								<td>Petani</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>SV</td>
+								<td>Conspiracy</td>
+							</tr>
+						</table>
 						<table>
 							<tr>
 								<th colspan="3">PUBG Mobile</th>
@@ -147,26 +387,7 @@
 								<td>Tim A</td>
 							</tr>
 						</table>
-						<table>
-							<tr>
-								<th colspan="3">LKTI</th>
-							</tr>
-							<tr>
-								<td>1st</td>
-								<td>FK</td>
-								<td>Rio Sindaru</td>
-							</tr>
-							<tr>
-								<td>2nd</td>
-								<td>FK</td>
-								<td>Dea Fauziyyanti</td>
-							</tr>
-							<tr>
-								<td>3rd</td>
-								<td>FISIP</td>
-								<td>Ina Nur Janah Isnaini</td>
-							</tr>
-						</table>
+						<h3>Bidang Seni Budaya</h3>
 						<table>
 							<tr>
 								<th colspan="3">Baca Puisi</th>
@@ -205,26 +426,6 @@
 								<td>3rd</td>
 								<td>FK</td>
 								<td>Nadyah Ni'matussholihah</td>
-							</tr>
-						</table>
-						<table>
-							<tr>
-								<th colspan="3">Essay</th>
-							</tr>
-							<tr>
-								<td>1st</td>
-								<td>SV</td>
-								<td>Ghozi</td>
-							</tr>
-							<tr>
-								<td>2nd</td>
-								<td>FK</td>
-								<td>Muhammad Miftah</td>
-							</tr>
-							<tr>
-								<td>3rd</td>
-								<td>FP</td>
-								<td>Karimah</td>
 							</tr>
 						</table>
 						<table>
@@ -275,6 +476,67 @@
 								<td>Juara Favorit</td>
 								<td>FP</td>
 								<td>DRAF SATU</td>
+							</tr>
+						</table>
+						<h3>Bidang Keilmiahan</h3>
+						<table>
+							<tr>
+								<th colspan="3">LKTI</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>Rio Sindaru</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FK</td>
+								<td>Dea Fauziyyanti</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FISIP</td>
+								<td>Ina Nur Janah Isnaini</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Essay</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>SV</td>
+								<td>Ghozi</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>SV</td>
+								<td>Muhammad Miftah</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FP</td>
+								<td>Karimah</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Debat</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>PSYCHO PATH</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FKIP</td>
+								<td>PARS PROTON</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FT</td>
+								<td>TEKNIK JAYA</td>
 							</tr>
 						</table>
 					</div>
