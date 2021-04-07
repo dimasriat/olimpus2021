@@ -17,7 +17,7 @@
 			<div>Olimpus 2021</div>
 		</header>
 		<main>
-			<div id="score-board">
+		<div id="score-board">
 				<h2>Perolehan Skor</h2>
 				<div id="score-board-container">
 					<div id="score-table">
@@ -31,40 +31,46 @@
 							</tr>
 							<tr>
 								<td>FK</td>
-								<td>2</td>
+								<td>6</td>
 								<td>3</td>
 								<td>2</td>
 							</tr>
 							<tr>
 								<td>FKIP</td>
-								<td>2</td>
+								<td>4</td>
 								<td>3</td>
 								<td>1</td>
 							</tr>
 							<tr>
-								<td>SV</td>
-								<td>2</td>
-								<td>1</td>
-								<td>1</td>
+								<td>FT</td>
+								<td>3</td>
+								<td>4</td>
+								<td>4</td>
 							</tr>
 							<tr>
-								<td>FT</td>
-								<td>1</td>
-								<td>1</td>
+								<td>SV</td>
+								<td>3</td>
+								<td>4</td>
 								<td>1</td>
 							</tr>
 							<tr>
 								<td>FIB</td>
 								<td>1</td>
-								<td>1</td>
+								<td>3</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FH</td>
 								<td>1</td>
 								<td>-</td>
-								<td>2</td>
+								<td>4</td>
 							</tr>
+							<tr>
+								<td>FEB</td>
+								<td>1</td>
+								<td>-</td>
+								<td>1</td>
+							</tr>		
 							<tr>
 								<td>FKOR</td>
 								<td>1</td>
@@ -74,7 +80,13 @@
 							<tr>
 								<td>FP</td>
 								<td>-</td>
-								<td>1</td>
+								<td>3</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>FMIPA</td>
+								<td>-</td>
+								<td>-</td>
 								<td>2</td>
 							</tr>
 							<tr>
@@ -82,18 +94,6 @@
 								<td>-</td>
 								<td>-</td>
 								<td>1</td>
-							</tr>
-							<tr>
-								<td>FEB</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>		
-							<tr>
-								<td>FMIPA</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
 							</tr>
 						</table>
 						<h3>Perolehan Medali Olahraga</h3>
@@ -106,48 +106,48 @@
 							</tr>
 							<tr>
 								<td>FK</td>
-								<td>-</td>
+								<td>2</td>
 								<td>-</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FKIP</td>
-								<td>-</td>
-								<td>-</td>
+								<td>1</td>
+								<td>2</td>
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>SV</td>
+								<td>FH</td>
+								<td>1</td>
 								<td>-</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>FKOR</td>
+								<td>1</td>
 								<td>-</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FT</td>
 								<td>-</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>SV</td>
 								<td>-</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>FP</td>
+								<td>-</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FIB</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FH</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FKOR</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FP</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
@@ -181,40 +181,58 @@
 								<th>3rd 🥉</th>
 							</tr>
 							<tr>
-								<td>FK</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
+								<td>FT</td>
+								<td>3</td>
+								<td>2</td>
+								<td>1</td>
 							</tr>
 							<tr>
-								<td>FKIP</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
+								<td>FK</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
 							</tr>
 							<tr>
 								<td>SV</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FT</td>
-								<td>-</td>
-								<td>-</td>
+								<td>2</td>
+								<td>2</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FIB</td>
+								<td>1</td>
+								<td>2</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FKIP</td>
+								<td>1</td>
+								<td>-</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>FEB</td>
+								<td>1</td>
 								<td>-</td>
 								<td>-</td>
+							</tr>		
+							<tr>
+								<td>FP</td>
 								<td>-</td>
+								<td>2</td>
+								<td>3</td>
 							</tr>
 							<tr>
 								<td>FH</td>
 								<td>-</td>
 								<td>-</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>FMIPA</td>
 								<td>-</td>
+								<td>-</td>
+								<td>1</td>
 							</tr>
 							<tr>
 								<td>FKOR</td>
@@ -223,25 +241,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>FP</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
 								<td>FISIP</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FEB</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>		
-							<tr>
-								<td>FMIPA</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
@@ -258,34 +258,58 @@
 							</tr>
 							<tr>
 								<td>FK</td>
-								<td>-</td>
-								<td>-</td>
+								<td>2</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FKIP</td>
-								<td>-</td>
-								<td>-</td>
+								<td>2</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>SV</td>
-								<td>-</td>
-								<td>-</td>
+								<td>1</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FT</td>
 								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
+								<td>1</td>
+								<td>1</td>
+							</tr>	
 							<tr>
 								<td>FIB</td>
 								<td>-</td>
-								<td>-</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
+							<tr>
+								<td>FP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>FISIP</td>
+								<td>-</td>
+								<td>-</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>FMIPA</td>
+								<td>-</td>
+								<td>-</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>FEB</td>
+								<td>-</td>
+								<td>-</td>
+								<td>1</td>
+							</tr>	
 							<tr>
 								<td>FH</td>
 								<td>-</td>
@@ -294,30 +318,6 @@
 							</tr>
 							<tr>
 								<td>FKOR</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FP</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FISIP</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>FEB</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-							</tr>		
-							<tr>
-								<td>FMIPA</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
@@ -385,6 +385,46 @@
 								<td>3rd</td>
 								<td>FH</td>
 								<td>Tim A</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Catur Individu</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>Febriagi Bayu Aji</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FT</td>
+								<td>Muhammad Aidil Samara</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FT</td>
+								<td>Kondang Korniawan</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Catur Beregu</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>CHESS.FKUNS</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>SV</td>
+								<td>Delegasi Olimpus SV</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FT</td>
+								<td>Teknik</td>
 							</tr>
 						</table>
 						<h3>Bidang Seni Budaya</h3>
@@ -478,6 +518,126 @@
 								<td>DRAF SATU</td>
 							</tr>
 						</table>
+						<table>
+							<tr>
+								<th colspan="3">Tari Modern</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>SV</td>
+								<td>Bernadetta Arbaleta Dyah Setyowati</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>SV</td>
+								<td>Vina Maria Meilasari Koswanto</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FP</td>
+								<td>Norzizatul</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Tari Tradisional</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FEB</td>
+								<td>Rosa Faustina Sari Maandag</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FP</td>
+								<td>Mutya Ayuningtias</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FT</td>
+								<td>Dhita Ayu Pramesti</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Hifdzil Qur'an Putra</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FT</td>
+								<td>Annafis Manaruzzaki</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FP</td>
+								<td>Agung Rachmana Putera</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FH</td>
+								<td>Abdusyahid Naufal F</td>
+							</tr>
+						</table>                        
+						<table>
+							<tr>
+								<th colspan="3">Hifdzil Qur'an Putri</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>Abidah Agniah Qalby</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FK</td>
+								<td>Fadhila Dzatu Rifqi</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FMIPA</td>
+								<td>Assyaffa Wafiqah</td>
+							</tr>
+						</table>                      
+						<table>
+							<tr>
+								<th colspan="3">Tilawatil Qur'an Putra</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FT</td>
+								<td>M. Hadziq Munajih</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FT</td>
+								<td>Khilalul Hanif</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FH</td>
+								<td>Riyadi</td>
+							</tr>
+						</table>                  
+						<table>
+							<tr>
+								<th colspan="3">Tilawatil Qur'an Putri</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FK</td>
+								<td>Sopia Nur Habibah</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FIB</td>
+								<td>Fika Hikmatul Fawziyah</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FP</td>
+								<td>Khansa Rana Afifah</td>
+							</tr>
+						</table>
 						<h3>Bidang Keilmiahan</h3>
 						<table>
 							<tr>
@@ -537,6 +697,46 @@
 								<td>3rd</td>
 								<td>FT</td>
 								<td>TEKNIK JAYA</td>
+							</tr>
+						</table>						
+						<table>
+							<tr>
+								<th colspan="3">Speech</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FKIP</td>
+								<td>Salma Fauzia Wardani</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FT</td>
+								<td>Ervizal Buana Jatiputra</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FMIPA</td>
+								<td>Hafizhah</td>
+							</tr>
+						</table>					
+						<table>
+							<tr>
+								<th colspan="3">Infografis</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FKIP</td>
+								<td>Sima Nabila & Dina Kuswantari</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FIB</td>
+								<td>Jenya Cahya</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FEB</td>
+								<td>Vico Damar & Alfina Khoirunnisa</td>
 							</tr>
 						</table>
 					</div>
