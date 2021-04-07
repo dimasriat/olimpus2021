@@ -114,7 +114,7 @@ function addHelper(panorama) {
 }
 function addPanorama(image) {
     const panorama = new PANOLENS.ImagePanorama(
-        "/img/artech_final/panorama/" + image
+        "/img/artech_final_wow/panorama/" + image
     );
 
     if (devMode) {
