@@ -17,7 +17,7 @@
 			<div>Olimpus 2021</div>
 		</header>
 		<main>
-		<div id="score-board">
+			<div id="score-board">
 				<h2>Perolehan Skor</h2>
 				<div id="score-board-container">
 					<div id="score-table">
@@ -39,7 +39,7 @@
 								<td>FKIP</td>
 								<td>4</td>
 								<td>3</td>
-								<td>1</td>
+								<td>2</td>
 							</tr>
 							<tr>
 								<td>FT</td>
@@ -51,12 +51,24 @@
 								<td>SV</td>
 								<td>3</td>
 								<td>4</td>
-								<td>1</td>
+								<td>2</td>
 							</tr>
 							<tr>
 								<td>FIB</td>
+								<td>2</td>
+								<td>4</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FP</td>
 								<td>1</td>
 								<td>3</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>FSRD</td>
+								<td>1</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
@@ -70,7 +82,7 @@
 								<td>1</td>
 								<td>-</td>
 								<td>1</td>
-							</tr>		
+							</tr>
 							<tr>
 								<td>FKOR</td>
 								<td>1</td>
@@ -78,15 +90,9 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>FP</td>
-								<td>-</td>
-								<td>3</td>
-								<td>4</td>
-							</tr>
-							<tr>
 								<td>FMIPA</td>
 								<td>-</td>
-								<td>-</td>
+								<td>1</td>
 								<td>2</td>
 							</tr>
 							<tr>
@@ -163,15 +169,21 @@
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
-							</tr>		
+							</tr>
 							<tr>
 								<td>FMIPA</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
 							</tr>
+							<tr>
+								<td>FSRD</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
 						</table>
-						
+
 						<h3>Perolehan Medali Seni Budaya</h3>
 						<table>
 							<tr>
@@ -187,6 +199,12 @@
 								<td>1</td>
 							</tr>
 							<tr>
+								<td>FIB</td>
+								<td>2</td>
+								<td>3</td>
+								<td>-</td>
+							</tr>
+							<tr>
 								<td>FK</td>
 								<td>2</td>
 								<td>2</td>
@@ -196,43 +214,43 @@
 								<td>SV</td>
 								<td>2</td>
 								<td>2</td>
-								<td>-</td>
+								<td>1</td>
 							</tr>
 							<tr>
-								<td>FIB</td>
+								<td>FP</td>
 								<td>1</td>
 								<td>2</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>FSRD</td>
+								<td>1</td>
+								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
 								<td>FKIP</td>
 								<td>1</td>
 								<td>-</td>
-								<td>1</td>
+								<td>2</td>
 							</tr>
 							<tr>
 								<td>FEB</td>
 								<td>1</td>
 								<td>-</td>
 								<td>-</td>
-							</tr>		
+							</tr>
 							<tr>
-								<td>FP</td>
+								<td>FMIPA</td>
 								<td>-</td>
-								<td>2</td>
-								<td>3</td>
+								<td>1</td>
+								<td>1</td>
 							</tr>
 							<tr>
 								<td>FH</td>
 								<td>-</td>
 								<td>-</td>
 								<td>2</td>
-							</tr>
-							<tr>
-								<td>FMIPA</td>
-								<td>-</td>
-								<td>-</td>
-								<td>1</td>
 							</tr>
 							<tr>
 								<td>FKOR</td>
@@ -247,7 +265,7 @@
 								<td>-</td>
 							</tr>
 						</table>
-						
+
 						<h3>Perolehan Medali Keilmiahan</h3>
 						<table>
 							<tr>
@@ -257,13 +275,13 @@
 								<th>3rd 🥉</th>
 							</tr>
 							<tr>
-								<td>FK</td>
+								<td>FKIP</td>
 								<td>2</td>
 								<td>1</td>
 								<td>-</td>
 							</tr>
 							<tr>
-								<td>FKIP</td>
+								<td>FK</td>
 								<td>2</td>
 								<td>1</td>
 								<td>-</td>
@@ -279,7 +297,7 @@
 								<td>-</td>
 								<td>1</td>
 								<td>1</td>
-							</tr>	
+							</tr>
 							<tr>
 								<td>FIB</td>
 								<td>-</td>
@@ -309,7 +327,7 @@
 								<td>-</td>
 								<td>-</td>
 								<td>1</td>
-							</tr>	
+							</tr>
 							<tr>
 								<td>FH</td>
 								<td>-</td>
@@ -318,6 +336,12 @@
 							</tr>
 							<tr>
 								<td>FKOR</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>FSRD</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
@@ -334,7 +358,7 @@
 							<tr>
 								<td>1st</td>
 								<td>FH</td>
-								<td>KantinKopso</td>
+								<td>byKantinKopso</td>
 							</tr>
 							<tr>
 								<td>2nd</td>
@@ -354,7 +378,7 @@
 							<tr>
 								<td>1st</td>
 								<td>FKOR</td>
-								<td>Tim B</td>
+								<td>FKOR Team B</td>
 							</tr>
 							<tr>
 								<td>2nd</td>
@@ -364,7 +388,7 @@
 							<tr>
 								<td>3rd</td>
 								<td>FH</td>
-								<td>Tim A</td>
+								<td>FH A Team</td>
 							</tr>
 						</table>
 						<table>
@@ -374,17 +398,17 @@
 							<tr>
 								<td>1st</td>
 								<td>FKIP</td>
-								<td>geography</td>
+								<td>Geography Team</td>
 							</tr>
 							<tr>
 								<td>2nd</td>
 								<td>FKIP</td>
-								<td>sk</td>
+								<td>SK Team</td>
 							</tr>
 							<tr>
 								<td>3rd</td>
 								<td>FH</td>
-								<td>Tim A</td>
+								<td>FH A Team</td>
 							</tr>
 						</table>
 						<table>
@@ -577,7 +601,7 @@
 								<td>FH</td>
 								<td>Abdusyahid Naufal F</td>
 							</tr>
-						</table>                        
+						</table>
 						<table>
 							<tr>
 								<th colspan="3">Hifdzil Qur'an Putri</th>
@@ -597,7 +621,7 @@
 								<td>FMIPA</td>
 								<td>Assyaffa Wafiqah</td>
 							</tr>
-						</table>                      
+						</table>
 						<table>
 							<tr>
 								<th colspan="3">Tilawatil Qur'an Putra</th>
@@ -617,7 +641,7 @@
 								<td>FH</td>
 								<td>Riyadi</td>
 							</tr>
-						</table>                  
+						</table>
 						<table>
 							<tr>
 								<th colspan="3">Tilawatil Qur'an Putri</th>
@@ -636,6 +660,66 @@
 								<td>3rd</td>
 								<td>FP</td>
 								<td>Khansa Rana Afifah</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Seni Lukis</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FP</td>
+								<td>Lisa Fitria Arhamma</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FSRD</td>
+								<td>Kharisma Nur Saputri</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>SV</td>
+								<td>Putri Alissya Nazwadiha</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Comic Strip</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FSRD</td>
+								<td>Salma Putri Yuliani</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FMIPA</td>
+								<td>Anida Salma</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FP</td>
+								<td>Cahyaning Puspita Ati</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th colspan="3">Cipta Puisi</th>
+							</tr>
+							<tr>
+								<td>1st</td>
+								<td>FIB</td>
+								<td>Muhammad Dava Arrifa</td>
+							</tr>
+							<tr>
+								<td>2nd</td>
+								<td>FIB</td>
+								<td>Erhan Al Farizi</td>
+							</tr>
+							<tr>
+								<td>3rd</td>
+								<td>FKIP</td>
+								<td>Nur Fadillah</td>
 							</tr>
 						</table>
 						<h3>Bidang Keilmiahan</h3>
@@ -666,17 +750,17 @@
 							<tr>
 								<td>1st</td>
 								<td>SV</td>
-								<td>Ghozi</td>
+								<td>Ghozi Fata Ulwan</td>
 							</tr>
 							<tr>
 								<td>2nd</td>
 								<td>SV</td>
-								<td>Muhammad Miftah</td>
+								<td>Muhammad Miftah D & Helda Dwi H</td>
 							</tr>
 							<tr>
 								<td>3rd</td>
 								<td>FP</td>
-								<td>Karimah</td>
+								<td>Karimah & Lyra Angelica</td>
 							</tr>
 						</table>
 						<table>
@@ -698,7 +782,7 @@
 								<td>FT</td>
 								<td>TEKNIK JAYA</td>
 							</tr>
-						</table>						
+						</table>
 						<table>
 							<tr>
 								<th colspan="3">Speech</th>
@@ -718,7 +802,7 @@
 								<td>FMIPA</td>
 								<td>Hafizhah</td>
 							</tr>
-						</table>					
+						</table>
 						<table>
 							<tr>
 								<th colspan="3">Infografis</th>

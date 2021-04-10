@@ -18,9 +18,56 @@
 		</header>
 		<main>
 			<div id="content">
-				<div id="comingsoon">
-					<h1>Coming Soon</h1>
-					<p id="countdown"></p>
+				<div id="video">
+					<iframe src="https://www.youtube.com/embed/l2MiEzS1WCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div id="rundown">
+					<h2>Rundown</h2>
+					<ol>
+						<li>Light Show</li>
+						<li>MC Sounding</li>
+						<li>Pembacaan Doa</li>
+						<li>Indonesia Raya</li>
+						<li>Penayangan Storyline</li>
+						<li>Sambutan Ketua Olimpus</li>
+						<li>Sambutan Presiden BEM UNS</li>
+						<li>Sambutan Prof Jamal / Prof Yunus / Pak Sutanto</li>
+						<li>Break Adzan Isya</li>
+						<li>Penutupan Simbolisasi Olimpus</li>
+						<li>Duta Kampus Segmen 1</li>
+						<li>Awarding 1</li>
+						<li>Awarding 2</li>
+						<li>Awarding 3</li>
+						<li>Penampilan Komda</li>
+						<li>Duta Kampus Sesi 2</li>
+						<li>Awarding 4</li>
+						<li>Awarding 5</li>
+						<li>Awarding 6</li>
+						<li>Awarding 7</li>
+						<li>Penampilan Pemenang Modern Dance</li>
+						<li>Final Duta Kampus</li>
+						<li>Penyerahan Vandel ke Humas UNS, IQ, 11 BEM, 2 Himpunan, Komunitas Duta Kampus</li>
+						<li>Penyerahan piala juara umum, juara keolahragaan, juara penalaran, juara seni</li>
+						<li>Penampilan pemenang lomba band</li>
+						<li>Closing MC</li>
+					</ol>
+				</div>
+			</div>
+			<div id="chats">
+				<div id="write">
+					<h2>Live Chat</h2>
+					<form onsubmit="return sendMessage();">
+						<input type="text" name="username" id="username" placeholder="username" />
+						<input type="hidden" name="color" id="color" value="" />
+						<textarea name="message" id="message" placeholder="message" autocomplete="FALSE"></textarea>
+						<input type="submit" value="send" />
+					</form>
+					<p style="font-family: monospace">
+						Untuk menambahkan emoji pada Windows 10, tekan Windows + tanda titik (.) di keyboard
+					</p>
+				</div>
+				<div id="read">
+					<div id="chatbox"></div>
 				</div>
 			</div>
 		</main>
@@ -28,38 +75,9 @@
 			<div>Copyright © 2021 Olimpus UNS. All rights reserved.</div>
 		</footer>
 	</div>
-
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("Apr 10, 2021 19:00:00").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-			// Get today's date and time
-			var now = new Date().getTime();
-
-			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
-
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Display the result in the element with id="demo"
-			document.getElementById("countdown").innerHTML = days + " hari, " + hours + " jam, " +
-				minutes + " menit, " + seconds + " detik 😉";
-
-			// If the count down is finished, write some text
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("countdown").innerHTML = "Maintenance";
-			}
-		}, 1000);
-	</script>
-	<script src="{{ asset('js/jquery.min.js') }}"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+	<script src="{{ asset('js/closing.js') }}"></script>
 </body>
 
 </html>
